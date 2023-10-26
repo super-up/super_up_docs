@@ -104,4 +104,4 @@ AGORA_APP_CERTIFICATE=""
 
 2. If you see the
    error `The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services`
-   , it means you have enabled FCM but have not [configured](https://www.youtube.com/watch?v=cXOzbKDXTh0) it.
+   ,it means you have enabled FCM but have not [configured](https://www.youtube.com/watch?v=cXOzbKDXTh0) it.
