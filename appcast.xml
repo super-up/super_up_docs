@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>auto_updater_example</title>
+        <description>Most recent updates to auto_updater_example</description>
+        <language>en</language>
+        <item>
+            <title>Version 1.1.0</title>
+            <pubDate>Sun, 16 Feb 2022 12:00:00 +0800</pubDate>
+            <enclosure url="/auto_updater_example-1.1.0+2-macos.zip"
+                       sparkle:edSignature="pbdyPt92pnPkzLfQ7BhS9hbjcV9//kJQ2yZYOSVgAA=="
+                       sparkle:version="1.1.0"
+                       sparkle:os="macos"
+                       length="13400992"
+                       type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>

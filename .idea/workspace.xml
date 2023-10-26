@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c66bdb0-2d57-4101-996c-c59148ea88a9" name="Changes" comment="test">
+      <change afterPath="$PROJECT_DIR$/appcast.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/x.txt" beforeDir="false" afterPath="$PROJECT_DIR$/x.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/x.txt.zip" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +53,19 @@
   }
 }</component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="super_up_docs" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="super_up_docs" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -73,6 +87,8 @@
       <updated>1698145975937</updated>
       <workItem from="1698145977202" duration="76000" />
       <workItem from="1698157894450" duration="1523000" />
+      <workItem from="1698320573627" duration="1402000" />
+      <workItem from="1698333375376" duration="835000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <option name="closed" value="true" />

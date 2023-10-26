@@ -1,1 +1,2 @@
 https://raw.githubusercontent.com/super-up/super_up_docs/apps/x.txt
+https://raw.githubusercontent.com/super-up/super_up_docs/apps/app-arm64-v8a-release.apk
