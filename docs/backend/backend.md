@@ -82,6 +82,13 @@ AGORA_APP_CERTIFICATE=""
    in `.env.production` if necessary.
 7. Update the `PORT` in the `.env` file if using Docker, and ensure you update the environment variable in the OS (env).
 
+### Depoly web
+1. run the flutter code to build the web version inside the `super_up_app` folder
+2. run this code `flutter build web --web-renderer html`
+3. now you can find the html folder inside the build folder you need to upload it to your server
+4. your server can your vps server you can use nginx to deploy your web code and admin code
+
+
 ### Running the Code (With Docker)
 
 1. Install [Docker](https://www.docker.com) and Docker Compose.
@@ -105,3 +112,8 @@ AGORA_APP_CERTIFICATE=""
 2. If you see the
    error `The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services`
    ,it means you have enabled FCM but have not [configured](https://www.youtube.com/watch?v=cXOzbKDXTh0) it.
+
+### Support
+- i offer full deploy support for backend and fornt end the flutter 
+- it will inclould the following
+1. android apk and 

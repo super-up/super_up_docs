@@ -18,7 +18,7 @@ melos bs
 ```
 
 - this code will run pub get for you in all packages
-  ![](./img/flutter_project_strc.png)
+  ![](../img/flutter_project_strc.png)
 - we have the following
 - apps (`super_up_admin`) this is the admin panel
 - apps (`super_up_app`) this app you should run it
@@ -142,30 +142,114 @@ abstract class SConstants {
 - `ios/Runner/AppDelegate.swift`
 - GMSServices.provideAPIKey(`YOUR API_KEY HERE!`)
 
-### About cupertino theme
-
-- iam use `CupertinoApp` this means any material components will not work
-- like (TextFiled, FloatingAction, ListTile,Card,Theme.of(),etc...) will throw exception you need to replace it by
-  cupertino widgets
-- TextFiled => CupertinoTextFiled, ListTile => CupertinoListTile ,Theme.of() =>CupertinoTheme.of() ,etc...
-- more details [here](https://docs.flutter.dev/ui/widgets/cupertino)
-
 ### Notifications (ios)
+
 APNs Integration (IMPORTANT):
-Firebase Cloud Messaging uses Apple Push Notification Service (APNs) to send messages to iOS devices. Therefore, you will need to:
+Firebase Cloud Messaging uses Apple Push Notification Service (APNs) to send messages to iOS devices. Therefore, you
+will need to:
 
 Create an APNs key in the Apple Developer Center.
 Upload this key to the Firebase console in the Cloud Messaging settings for your project.
-Configure the APNs key in your app by setting up your app's capabilities in Xcode. This includes enabling "Push Notifications" under "Capabilities".
+Configure the APNs key in your app by setting up your app's capabilities in Xcode. This includes enabling "Push
+Notifications" under "Capabilities".
 Once you've done all this, your Flutter app on iOS should be able to receive notifications through Firebase!
 
+### how to update theme
 
-### publish 
+- For `dark` theme use it already inside the `main.dart` just update it  `dont delete it!`
+
+#### First message page
+
+``` 
+darkTheme: ThemeData(
+          extensions: [
+            VMessageTheme.dark().copyWith(
+            ///see other options!
+              scaffoldDecoration:  BoxDecoration(
+                color: Colors.green
+              ),
+              receiverTextStyle: TextStyle(),
+              receiverBubbleColor: Colors.green
+            ),
+          ],
+        ),
+```
+
+- for `light` theme use
+
+```
+   theme: ThemeData(
+            extensions: [
+                 VMessageTheme.dark().copyWith(
+                   ///see other options!
+              scaffoldDecoration:  BoxDecoration(
+                color: Colors.green
+              ),
+              receiverTextStyle: TextStyle(),
+              receiverBubbleColor: Colors.green
+            ),
+            ],
+          ),
+```
+
+#### second Chats Room page
+
+- for `dark` theme use
+
+``` 
+darkTheme: ThemeData(
+          extensions: [
+            VRoomTheme.light().copyWith(
+              ///see other options!
+                scaffoldDecoration: VRoomTheme.light()
+                    .scaffoldDecoration
+                    .copyWith(color: lightColorScheme.background),
+              ),
+          ],
+        ),
+```
+
+- for `light` theme use
+
+```
+   theme: ThemeData(
+            extensions: [
+            VRoomTheme.light().copyWith(
+              ///see other options!
+                scaffoldDecoration: VRoomTheme.light()
+                    .scaffoldDecoration
+                    .copyWith(color: lightColorScheme.background),
+              ),
+            ],
+          ),
+```
+
+### one signal
+
+- Get the onesignal id for push notifications [https://onesignal.com] see flutter docs
+- then in `apps/super_up_app/lib/v_chat_v2/v_chat_config.dart` enable OneSignal push by add this `constructor`
+- dont forget to update the app id in `SConstants.oneSignalAppId`
+``` 
+      vPush: VPush(
+        enableVForegroundNotification: true,
+        vPushConfig: const VLocalNotificationPushConfig(),
+        ///if you support fcm push notifications
+        fcmProvider: VChatFcmProver(),
+        ///if you support OneSignal push notifications **THIS**
+        oneSignalProvider: VChatOneSignalProver(
+          appId: SConstants.oneSignalAppId,
+        ),
+      ),
+```
+
+### publish
+
 - open terminal inside the `super_up_app` folder
-1. for android, you can run `flutter build apk --split-per-abi` for store [publish](https://docs.flutter.dev/deployment/android)
+
+1. for android, you can run `flutter build apk --split-per-abi` for
+   store [publish](https://docs.flutter.dev/deployment/android)
 2. for web, you can run `flutter build web --web-renderer html`
 3. for ios, you can run [ios](https://docs.flutter.dev/deployment/ios)
-
 
 :::danger
 Doesn't update any package version unless you know what to do
