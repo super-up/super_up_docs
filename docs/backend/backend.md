@@ -14,7 +14,6 @@ sidebar_position: 3
 3. Install [MongoDB](https://www.mongodb.com/try/download/community-kubernetes-operator) (minimum `v4.4`,
    recommended `v6`).
 
-
 ### .env file
 
 ```
@@ -54,11 +53,14 @@ AGORA_APP_CERTIFICATE=""
 - You can edit the home inside `public/home.html` you can access it `http://localhost:3000`
 
 ### firebase admin file
+
 1. Make sure the firebase account is the same as the one used in flutter app.
 2. To ensure chat notifications work properly, follow [this video](https://www.youtube.com/watch?v=cXOzbKDXTh0) to
    obtain the `firebase.adminsdk.json` file.
 3. Replace the existing `firebase.adminsdk.json` file with your new one.
-
+4. open your account in `firebase` then enable the `Cloud Messaging API (Legacy)` from
+![](../img/firebase1.png)
+![](../img/firebase2.png)
 
 ### Obtaining OneSignal Keys
 
@@ -84,11 +86,11 @@ AGORA_APP_CERTIFICATE=""
 7. Update the `PORT` in the `.env` file if using Docker, and ensure you update the environment variable in the OS (env).
 
 ### Deploy web
+
 1. run the flutter code to build the web version inside the `super_up_app` folder
 2. run this code `flutter build web --web-renderer html`
 3. now you can find the html folder inside the build folder you need to upload it to your server
 4. your server can your vps server you can use nginx to deploy your web code and admin code
-
 
 ### Running the Code (With Docker)
 
@@ -100,7 +102,6 @@ AGORA_APP_CERTIFICATE=""
 4. Use a `compose file` witch manage all dependency together.
 5. Run `docker-compose up` to start the containers and view logs, or run `docker-compose up -d` to run in the
    background.
-
 
 ### Common Errors
 
@@ -115,6 +116,8 @@ AGORA_APP_CERTIFICATE=""
    ,it means you have enabled FCM but have not [configured](https://www.youtube.com/watch?v=cXOzbKDXTh0) it.
 
 ### Support
-- i offer full deploy support for backend and fornt end the flutter 
+
+- i offer full deploy support for backend and fornt end the flutter
 - it will inclould the following
+
 1. android apk and 

@@ -38,11 +38,11 @@ melos bs
 - then run the code in the super_up_app `flutter pub run flutter_launcher_icons:main`
 
 ### Connect firebase
-
-[android](https://firebase.google.com/docs/flutter/setup?platform=android),[ios](https://firebase.google.com/docs/flutter/setup?platform=ios)
-
-- You can connect it easly be firebase
-  CLI [tool](https://firebase.google.com/docs/flutter/setup?platform=ios#install-cli-tools)
+- Recommend to user firebase flutter CLI which its new tool to make the firebase base connect straightforward
+- [android](https://firebase.google.com/docs/flutter/setup?platform=android)
+- [ios](https://firebase.google.com/docs/flutter/setup?platform=ios)
+- You can connect it easily be firebase follow up this [video](https://www.youtube.com/watch?v=G-mbqiE87Lw)
+- CLI [tool](https://firebase.google.com/docs/flutter/setup?platform=ios#install-cli-tools)
 
 ### SConstants
 
@@ -128,7 +128,7 @@ abstract class SConstants {
 - Setup video and voice calls [agora](https://agora.io)
   `Static const agoraAppId = "------------------------";`
   ![](../img/agora.png)
-- enable the `Secondary Certificate` 
+- enable the `Secondary Certificate`
 
 ### Google api key
 
@@ -147,17 +147,35 @@ abstract class SConstants {
 - `ios/Runner/AppDelegate.swift`
 - GMSServices.provideAPIKey(`YOUR API_KEY HERE!`)
 
-### Notifications (ios)
+### Notifications  iOS (APNS)
 
-APNs Integration (IMPORTANT):
-Firebase Cloud Messaging uses Apple Push Notification Service (APNs) to send messages to iOS devices. Therefore, you
-will need to:
+- Login to your Apple Developer Account,(if you don’t have, you need to create one to be able to test, publish ios app).
 
-Create an APNs key in the Apple Developer Center.
-Upload this key to the Firebase console in the Cloud Messaging settings for your project.
-Configure the APNs key in your app by setting up your app's capabilities in Xcode. This includes enabling "Push
-Notifications" under "Capabilities".
-Once you've done all this, your Flutter app on iOS should be able to receive notifications through Firebase!
+- Navigate to `Certificates, Identifiers & Profiles > Keys >` Add New from the left menu.
+
+![](../img/xcode1.png)
+
+- Register a New key.
+- Set the key name as “FirebaseAPNS“.
+- Tick “Apple Push Notification Services (APNs)”
+- Click Continue to register it.
+  ![](../img/xcode2.png)
+- Once the key is registered follow below steps:
+- Copy the Team ID (keep it aside)
+- Download the Auth key File (keep it aside)
+- Copy the Key ID (keep it aside)
+- Click “Done” to complete.
+  ![](../img/xcode3.png)
+- Open Firebase Dashboard > Project Settings
+  ![](../img/xcode4.png)
+- Click on “Cloud Messaging” tab. For the iOS app, click “Upload”.
+  ![](../img/xcode5.png)
+- Click on “Browse” to upload the recently downloaded Auth key file.
+- Paste the Key ID
+- Paste the Team ID
+- Click upload to register it.
+  ![](../img/xcode6.png)
+- All done now with ios `notifications`
 
 ### how to update theme
 
