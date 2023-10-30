@@ -115,9 +115,8 @@ AGORA_APP_CERTIFICATE=""
    error `The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services`
    ,it means you have enabled FCM but have not [configured](https://www.youtube.com/watch?v=cXOzbKDXTh0) it.
 
-### Support
-
-- i offer full deploy support for backend and fornt end the flutter
-- it will inclould the following
-
-1. android apk and 
+:::tip Contact me
+Iam offer paid full server side setup
+Support email`hatemragapdev@gmail.com`
+Or on Skype at `live:.cid.607250433850e3a6`
+:::

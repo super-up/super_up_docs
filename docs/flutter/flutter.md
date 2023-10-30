@@ -159,17 +159,17 @@ abstract class SConstants {
 - Set the key name as “FirebaseAPNS“.
 - Tick “Apple Push Notification Services (APNs)”
 - Click Continue to register it.
-  ![](../img/xcode2.png)
+-  ![](../img/xcode2.png)
 - Once the key is registered follow below steps:
 - Copy the Team ID (keep it aside)
 - Download the Auth key File (keep it aside)
 - Copy the Key ID (keep it aside)
 - Click “Done” to complete.
-  ![](../img/xcode3.png)
+-  ![](../img/xcode3.png)
 - Open Firebase Dashboard > Project Settings
-  ![](../img/xcode4.png)
+-  ![](../img/xcode4.png)
 - Click on “Cloud Messaging” tab. For the iOS app, click “Upload”.
-  ![](../img/xcode5.png)
+-  ![](../img/xcode5.png)
 - Click on “Browse” to upload the recently downloaded Auth key file.
 - Paste the Key ID
 - Paste the Team ID
@@ -187,12 +187,7 @@ abstract class SConstants {
 darkTheme: ThemeData(
           extensions: [
             VMessageTheme.dark().copyWith(
-            ///see other options!
-              scaffoldDecoration:  BoxDecoration(
-                color: Colors.green
-              ),
-              receiverTextStyle: TextStyle(),
-              receiverBubbleColor: Colors.green
+            ///see  options!
             ),
           ],
         ),
@@ -204,12 +199,7 @@ darkTheme: ThemeData(
    theme: ThemeData(
             extensions: [
                  VMessageTheme.dark().copyWith(
-                   ///see other options!
-              scaffoldDecoration:  BoxDecoration(
-                color: Colors.green
-              ),
-              receiverTextStyle: TextStyle(),
-              receiverBubbleColor: Colors.green
+                   ///see options!
             ),
             ],
           ),
@@ -223,10 +213,8 @@ darkTheme: ThemeData(
 darkTheme: ThemeData(
           extensions: [
             VRoomTheme.light().copyWith(
-              ///see other options!
-                scaffoldDecoration: VRoomTheme.light()
-                    .scaffoldDecoration
-                    .copyWith(color: lightColorScheme.background),
+              ///see  options!
+   
               ),
           ],
         ),
@@ -238,10 +226,8 @@ darkTheme: ThemeData(
    theme: ThemeData(
             extensions: [
             VRoomTheme.light().copyWith(
-              ///see other options!
-                scaffoldDecoration: VRoomTheme.light()
-                    .scaffoldDecoration
-                    .copyWith(color: lightColorScheme.background),
+              ///see options!
+     
               ),
             ],
           ),
