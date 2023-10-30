@@ -27,12 +27,15 @@ melos bs
 
 ### Change app name,package,logo
 
+- each app must have `unique` package name so you must change it! to be accepted in the stores
 - this step should be done first before connect firebase
 - we will use this package [rename](https://pub.dev/packages/rename)
 - install by `flutter pub global activate rename`
 - to change package name `flutter pub global run rename --bundleId com.vchatsdk.vnotestarter`
   Example => `pub global run rename --bundleId com.XXXXXXX.XXXXXX`
 - to rename the app use `flutter pub global run rename --appname "YOUR APP NAME"`
+- to update logo just update the `logo.png` in assets folder the logo must be `png`
+- then run the code in the super_up_app `flutter pub run flutter_launcher_icons:main`
 
 ### Connect firebase
 
@@ -121,9 +124,11 @@ abstract class SConstants {
 
 ### Agora.io
 
-- Create agora app and enable it cupy the `appId` and
+- Create agora app and enable it copy the `appId` and enable
 - Setup video and voice calls [agora](https://agora.io)
   `Static const agoraAppId = "------------------------";`
+  ![](../img/agora.png)
+- enable the `Secondary Certificate` 
 
 ### Google api key
 
@@ -229,6 +234,7 @@ darkTheme: ThemeData(
 - Get the onesignal id for push notifications [https://onesignal.com] see flutter docs
 - then in `apps/super_up_app/lib/v_chat_v2/v_chat_config.dart` enable OneSignal push by add this `constructor`
 - dont forget to update the app id in `SConstants.oneSignalAppId`
+
 ``` 
       vPush: VPush(
         enableVForegroundNotification: true,

@@ -42,6 +42,7 @@ EMAIL_PASSWORD="EMAIL USER PASSWORD"
 
 # SET AGORA API KEYS
 AGORA_APP_ID=""
+# Get this from agora app console `Primary Certificate` value
 AGORA_APP_CERTIFICATE=""
 ```
 
@@ -82,7 +83,7 @@ AGORA_APP_CERTIFICATE=""
    in `.env.production` if necessary.
 7. Update the `PORT` in the `.env` file if using Docker, and ensure you update the environment variable in the OS (env).
 
-### Depoly web
+### Deploy web
 1. run the flutter code to build the web version inside the `super_up_app` folder
 2. run this code `flutter build web --web-renderer html`
 3. now you can find the html folder inside the build folder you need to upload it to your server

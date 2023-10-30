@@ -41,7 +41,7 @@ FCM for push notifications only! `No for firebase high cost!`
    firebase `Optional`
 8. [google-api-key](https://developers.google.com/maps/documentation/javascript/get-api-key) this key used for search
    and let users able to send locations in chat `Optional`
-9. [google-ads-banner](https://admob.google.com/home/get-started) keys get banner id for `ios` and `android` if you want
+9. [google-ads-banner](https://admob.google.com/home) keys get banner id for `ios` and `android` if you want
    to enable it `Optional`
 10. For run ios you need paid apple developer [account](https://developer.apple.com) (99$) per year
 
