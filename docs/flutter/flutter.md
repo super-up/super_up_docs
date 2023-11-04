@@ -11,7 +11,7 @@ sidebar_position: 2
 dart pub global activate melos
 ```
 
--then run this commend in the root of the project
+- Then run this commend in the root of the project
 
 ```
 melos bs
@@ -34,8 +34,9 @@ melos bs
 - to change package name `flutter pub global run rename --bundleId com.vchatsdk.vnotestarter`
   Example => `pub global run rename --bundleId com.XXXXXXX.XXXXXX`
 - to rename the app use `flutter pub global run rename --appname "YOUR APP NAME"`
-- to update logo just update the `logo.png` in assets folder the logo must be `png`
+- to update logo just update the `logo.png` in assets folder the logo must be `.png`
 - then run the code in the super_up_app `flutter pub run flutter_launcher_icons:main`
+- then this command `dart run flutter_native_splash:create`
 
 ### Connect firebase
 - Recommend to user firebase flutter CLI which its new tool to make the firebase base connect straightforward

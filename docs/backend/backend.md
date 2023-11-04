@@ -27,7 +27,10 @@ NODE_ENV="production" # dont update it
 EDIT_MODE ="false" # set to false
 ignoreEnvFile="false"  # set to true if you will inject the env values from system os
 PORT=80 //exposed port
-ControlPanelAdminPassword= "super-up-strong-password" # put strong password for admin apis
+
+#Admin panel passwords be carfaul
+ControlPanelAdminPassword= "xxxxxxxxxxxxx" # put strong password for admin who can edit and update any thing in the app
+ControlPanelAdminPasswordViewer= "xxxxxxxxxx-xxxx" # put strong password for admin that can only read(see ,users data,chats data etc...) he cannot update any thing
 
 isOneSignalEnabled ="false" # set to true if you can provide oneSignalAppId and oneSignalApiKey to enable push by onesignal
 isFirebaseFcmEnabled ="false" # set to true if you provide the firebase admin.json file
@@ -59,8 +62,8 @@ AGORA_APP_CERTIFICATE=""
    obtain the `firebase.adminsdk.json` file.
 3. Replace the existing `firebase.adminsdk.json` file with your new one.
 4. open your account in `firebase` then enable the `Cloud Messaging API (Legacy)` from
-![](../img/firebase1.png)
-![](../img/firebase2.png)
+   ![](../img/firebase1.png)
+   ![](../img/firebase2.png)
 
 ### Obtaining OneSignal Keys
 
