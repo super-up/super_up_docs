@@ -1,0 +1,47 @@
+- This app almost whatsapp clone will all functions works like whatsapp exactly!
+- No Firebase is used only used for push notification and you can switch to OneSignal
+- Docker ready
+- Login And register by email and password
+- Reset password by send code to user email
+- Receive share from other apps (android,ios) works
+- Search in chats by usernames
+- Filter chats by unread chats
+- create group chats
+- create broadcast chats same as whatsapp
+- unread chat for all chats and for each chats like whatsapp
+- [mute un mute notifications],[Delete],[Report] chats
+- call history
+- All users not deleted his account and search on them
+- settings tab (light mode,dark mode)
+- settings tab update account name ,Bio,image,password,delete my account
+- star messages
+- manage devices page (see all app devices and logout for any one)
+- support for 16 language
+- admin notification so admin can send notification to all users
+- blocked users page
+- in app notification mute for all chats
+- Help (contact us) and (privacy policy page)
+- Check for update
+- Logout for the app
+- group chat mentions
+- nicknames support
+- voice and video calls using agora.io
+- send  Text, image, video, voice note, documents, location share
+- full support for offline chat even you send message while app has bad network it will resend
+- we support 4 type for message status exactly like whatsapp (pending,send,delivered,seen) all states works excellent
+- Last seen and group (total online, total members count)
+- Good voice player support	support next play and speed up the voice player and more!
+- ensures all functions work on various platforms, including Android, iOS, web, macOS, and Windows.
+- full sync message between all platforms in real time!!
+- FCM and OneSignal push notifications supported
+- enables message forwarding to multiple rooms, replying with auto-highlight, sharing messages externally, message info tracking, deletion for oneself and all receivers, media sharing from external apps, and more.
+- delete and delete from all function in message
+- from admin panel you can set max limit for group members and broadcast and max forward,share message limit,max media upload size and more
+- you can ban users from use the app from admin panel and more!!
+- you can see statistical analysis about messages and room and users in admin panel
+- Clean UI/UX app clone from whatsapp for ios
+- Download Media for all platform
+- Admob ads (banner) – Control from Admin App
+- User Profile View
+- See All Joined Users users management system for group chats users,admins,superAdmins
+- more and more you will discover inside the demo!

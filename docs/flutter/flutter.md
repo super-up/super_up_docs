@@ -53,7 +53,7 @@ melos bs
 ```dart
 abstract class SConstants {
   ///your super up base domain url
-  ///like this (example.com) not start https// or any sub domains example [superupdev.com]
+  ///like this (example.com) not start https// or any sub domains example [superupdev.com] or server ip with port like [12.xxx.xxx:80]
   static const _productionBaseUrl = "superupdev.online";
 
   ///your app name
@@ -80,12 +80,12 @@ abstract class SConstants {
   ///don't update
   static String get feedUrl => "https://$_productionBaseUrl/apps/appcast.xml";
 
-  ///don't update
+  ///don't update update only if you use server ip just return your server ip with port [12.xxx.xxx:80/]
   static String get baseMediaUrl {
     return "https://api.$_productionBaseUrl/";
   }
 
-  ///don't update
+  ///don't update update only if you use server ip just return your server ip with port [12.xxx.xxx:80/api/v1]
   static Uri get sApiBaseUrl {
     return Uri.parse("https://api.$_productionBaseUrl/api/v1");
   }

@@ -78,19 +78,43 @@ AGORA_APP_CERTIFICATE=""
 
 ### Running the Code (Without Docker)
 
-1. Open a terminal in the `backend` root folder.
-2. Run `npm i` or `npm i --force` if issues occur.
-3. Generate a `dist` folder `npm run build`.
-4. Run `npm run start:prod`. for live console logs if you run in production mode. in your vps server then you should
-   run `pm2 start ecosystem.config.js --only normal --env production`. to see logs run `pm2 logs`
-5. If you see `app run in production,` your code is production-ready.
-6. Access the development server at `localhost:80` and production server at port `80`. Update the port
-   in `.env.production` if necessary.
-7. Update the `PORT` in the `.env` file if using Docker, and ensure you update the environment variable in the OS (env).
+- You should be familiar with ubuntu server setup
+
+1. Install ubuntu server v 20.* and later
+2. Open a terminal in the `backend` root folder.
+3. Run `npm i` or `npm i --force` if issues occur.
+4. Generate a `dist` folder `npm run build`.
+5. Run `npm run start:prod`for live console logs for just make sure your server is configure well
+6. if you run in production mode. in your vps server then you should
+7. then stop and run this run `pm2 start ecosystem.config.js --only normal --env production`.for background serve
+8. to see logs run `pm2 logs`
+9. If you see `app run in production,` your code is production-ready.
+10. Access the development server at `localhost:80` and production server at port `80` Update the port
+    in `.env.production` if necessary.
+11. Update the `PORT` in the `.env` file if using Docker, and ensure you update the environment variable in the OS (env).
+12. you need to install `nginx` and connect domain to your server for security and more speed!
+13. dont forget to add the websocket support for nginx while you configure it
+14. inside the location of your server block don't forget to add this to enable websocket support
+```
+ proxy_set_header Upgrade $http_upgrade;
+ proxy_set_header Connection "upgrade";
+ proxy_http_version 1.1;
+ proxy_set_header Host $host;
+ proxy_set_header X-Real-IP $remote_addr;
+ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+ proxy_set_header X-Forwarded-Proto $scheme;
+```
 
 ### Deploy web
 
 1. run the flutter code to build the web version inside the `super_up_app` folder
+2. run this code `flutter build web --web-renderer html`
+3. now you can find the html folder inside the build folder you need to upload it to your server
+4. your server can your vps server you can use nginx to deploy your web code and admin code
+
+### Deploy admin
+
+1. run the flutter code to build the web version inside the `super_up_admin` folder
 2. run this code `flutter build web --web-renderer html`
 3. now you can find the html folder inside the build folder you need to upload it to your server
 4. your server can your vps server you can use nginx to deploy your web code and admin code

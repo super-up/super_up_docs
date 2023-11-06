@@ -45,6 +45,16 @@ FCM for push notifications only! `No for firebase high cost!`
    to enable it `Optional`
 10. For run ios you need paid apple developer [account](https://developer.apple.com) (99$) per year
 
+### after purchasing (codecanyou)
+
+- You will get all files for flutter project `(android,ios,web,macos,windows)`
+- You will get the flutter `admin panel` project
+- Postman collection for all apis
+- Full nestjs code which its backend code
+- Full support for future updates
+- Free support for bug fixes only (there is paid support)
+- You can use this project to modify and edit it serve your `Customers` !
+
 :::tip VCHAT SDK
 This project use [v-chat-sdk](https://github.com/hatemragab/v_chat_sdk) under the hood to serve the chat part
 This will not require you to purchase the [v-chat-sdk](https://v-chat-sdk.github.io/vchat-v2-docs/docs/intro) it already
