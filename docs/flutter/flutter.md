@@ -4,6 +4,8 @@ sidebar_position: 2
 
 # Flutter
 
+---
+
 - project structure in split packages
 - To run the project first activate `melos`
 
@@ -39,6 +41,7 @@ melos bs
 - then this command `dart run flutter_native_splash:create`
 
 ### Connect firebase
+
 - Recommend to user firebase flutter CLI which its new tool to make the firebase base connect straightforward
 - [android](https://firebase.google.com/docs/flutter/setup?platform=android)
 - [ios](https://firebase.google.com/docs/flutter/setup?platform=ios)
@@ -54,6 +57,7 @@ melos bs
 abstract class SConstants {
   ///your super up base domain url
   ///like this (example.com) not start https// or any sub domains example [superupdev.com] or server ip with port like [12.xxx.xxx:80]
+  /// case of you use server ip just put the server ip connected to the port [http://ip:port]
   static const _productionBaseUrl = "superupdev.online";
 
   ///your app name
@@ -77,16 +81,15 @@ abstract class SConstants {
   ///get the onesignal id for push notifications [https://onesignal.com]
   static const oneSignalAppId = "********-****-****-****-**************";
 
-  ///don't update
-  static String get feedUrl => "https://$_productionBaseUrl/apps/appcast.xml";
-
   ///don't update update only if you use server ip just return your server ip with port [12.xxx.xxx:80/]
   static String get baseMediaUrl {
+    ///if you dont setup domain yet you can return the server ip like this [return Uri.parse("http://ip:port/");]
     return "https://api.$_productionBaseUrl/";
   }
 
   ///don't update update only if you use server ip just return your server ip with port [12.xxx.xxx:80/api/v1]
   static Uri get sApiBaseUrl {
+    ///if you dont setup domain yet you can return the server ip like this [return Uri.parse("http://ip:port/api/v1");]
     return Uri.parse("https://api.$_productionBaseUrl/api/v1");
   }
 }
@@ -148,7 +151,7 @@ abstract class SConstants {
 - `ios/Runner/AppDelegate.swift`
 - GMSServices.provideAPIKey(`YOUR API_KEY HERE!`)
 
-### Notifications  iOS (APNS)
+### Notifications iOS (APNS)
 
 - Login to your Apple Developer Account,(if you don’t have, you need to create one to be able to test, publish ios app).
 
@@ -157,20 +160,20 @@ abstract class SConstants {
 ![](../img/xcode1.png)
 
 - Register a New key.
-- Set the key name as “FirebaseAPNS“.
+- Set the key name as `FirebaseAPNS`.
 - Tick “Apple Push Notification Services (APNs)”
 - Click Continue to register it.
--  ![](../img/xcode2.png)
+- ![](../img/xcode2.png)
 - Once the key is registered follow below steps:
 - Copy the Team ID (keep it aside)
 - Download the Auth key File (keep it aside)
 - Copy the Key ID (keep it aside)
 - Click “Done” to complete.
--  ![](../img/xcode3.png)
+- ![](../img/xcode3.png)
 - Open Firebase Dashboard > Project Settings
--  ![](../img/xcode4.png)
+- ![](../img/xcode4.png)
 - Click on “Cloud Messaging” tab. For the iOS app, click “Upload”.
--  ![](../img/xcode5.png)
+- ![](../img/xcode5.png)
 - Click on “Browse” to upload the recently downloaded Auth key file.
 - Paste the Key ID
 - Paste the Team ID
@@ -181,6 +184,7 @@ abstract class SConstants {
 ### how to update theme
 
 - For `dark` theme use it already inside the `main.dart` just update it  `dont delete it!`
+- Of course you can update the theme direct from the code if you have much experience
 
 #### First message page
 
@@ -238,7 +242,7 @@ darkTheme: ThemeData(
 
 - Get the onesignal id for push notifications [https://onesignal.com] see flutter docs
 - then in `apps/super_up_app/lib/v_chat_v2/v_chat_config.dart` enable OneSignal push by add this `constructor`
-- dont forget to update the app id in `SConstants.oneSignalAppId`
+- don't forget to update the app id in `SConstants.oneSignalAppId`
 
 ``` 
       vPush: VPush(
@@ -253,13 +257,28 @@ darkTheme: ThemeData(
       ),
 ```
 
+### Admin panel
+
+1. super up introduce admin panel to control the app
+2. there are two types of login admin login and viewer login
+3. you will have two passwords for the admin one for admin another for viewer
+4. admin can do anything viewer can only see the data he cant edit it
+5. you can set the password for admin and viewer from the `.env.production` file in the backend files this file is
+   hidden
+   `
+   #Admin panel passwords be carfaul
+   ControlPanelAdminPassword= "xxxxxxxxxxxxx" # put strong password for admin who can edit and update any thing in the app
+   ControlPanelAdminPasswordViewer= "xxxxxxxxxx-xxxx" # put strong password for admin that can only read(see ,users data,chats data etc...) he cannot update any thing
+   `
+6. You can change it any tine you want to re deploy your app!
+
 ### publish
 
 - open terminal inside the `super_up_app` folder
 
 1. for android, you can run `flutter build apk --split-per-abi` for
    store [publish](https://docs.flutter.dev/deployment/android)
-2. for web, you can run `flutter build web --web-renderer html`
+2. for web, you can run `flutter build web --web-renderer html` see backend section for how to upload
 3. for ios, you can run [ios](https://docs.flutter.dev/deployment/ios)
 
 :::danger

@@ -1,3 +1,5 @@
+SuperUp - Cupertino Theme Full Whatsapp Clone Socket.io And Mongodb With Flutter
+
 - This app almost whatsapp clone will all functions works like whatsapp exactly!
 - No Firebase is used only used for push notification and you can switch to OneSignal
 - Docker ready
@@ -45,3 +47,34 @@
 - User Profile View
 - See All Joined Users users management system for group chats users,admins,superAdmins
 - more and more you will discover inside the demo!
+
+Iam selling my app at Envato.
+I want you to write the plans for my super up chat app.
+Build with flutter i have 3 plans
+
+## first plan (basic) 100$ (Nodejs backend Only)
+The standard is full server side setup
+1. you will need to purchase a `domain name` `vps server` only
+2. The setup will configure the full server side setup from
+3. mongodb,security,free ssl certifications,nodejs full setup
+4. will be ready from 1 to 2 Days
+
+
+## Standard plan is for `200$` (android,web,admin)
+1. first plan + flutter configurations
+2. change app package name and app logo app name
+3. build .apk,web chat,admin panel versions
+4. configure third party packages like (agora.io,google ads,google maps key,connect firebase)
+5. publish android to google play console (you will need to create google developer account 25$)
+6. will be ready from 1 to 3 Days
+
+
+## Premium plan is for `300$` (android,web,admin,windows,ios,macOs)
+1. first plan + second plan
+2. change app package name and app logo app name for ios,macOs,windows
+3. build .ipa and macOs app
+4. publish ios,macOs,windows (you will need to create apple developer account 100$ and microsoft account)
+5. free update the app after install for 1 year!
+6. will be ready from 2 to 5 Days
+
+

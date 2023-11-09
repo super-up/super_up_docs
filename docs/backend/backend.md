@@ -2,31 +2,39 @@
 sidebar_position: 3
 ---
 
-# Backend
+# Backend (Nodejs)
+
+---
 
 ### Requirements
 
-1. Install Node.js (version `v16.x` or to `19.x`) and npm. Check the Node.js version using `node -v`.
-2. Install only if you not `docker user` cross-env `npm i -g cross-env` for managing production or development
+1. Person who has experience to deal with ubuntu server and deploy otherwise you can contact [me](mailto:hatemragapdev@gmail.com) iam offer best upload experience
+2. Install Node.js (version `v16.x` or to `19.x`) and npm. Check the Node.js version using `node -v`.
+3. Install only if you not `docker user` cross-env `npm i -g cross-env` for managing production or development
    environments and pm2 for manage production deploy by `npm i -g pm2`
    CLI (`npm install -g @nestjs/cli`).
 
-3. Install [MongoDB](https://www.mongodb.com/try/download/community-kubernetes-operator) (minimum `v4.4`,
+4. Install [MongoDB](https://www.mongodb.com/try/download/community-kubernetes-operator) (minimum `v4.4`,
    recommended `v6`).
 
 ### .env file
 
 ```
+# you can out local url or docker url or url of mongo in another service
 DB_URL="YOUR_MONGO_URL"
+
+# Dont update it ever after you set it! if you do all users will logout!!!
 JWT_SECRET="STRONG_PASSWORD"
 
+# Dont update it ever after you set it! if you do all users will logout!!!
 issuer="your gmail"
+# Dont update it ever after you set it! if you do all users will logout!!!
 audience="your gmail"
 
 NODE_ENV="production" # dont update it
 EDIT_MODE ="false" # set to false
 ignoreEnvFile="false"  # set to true if you will inject the env values from system os
-PORT=80 //exposed port
+PORT=80 //exposed port of node js
 
 #Admin panel passwords be carfaul
 ControlPanelAdminPassword= "xxxxxxxxxxxxx" # put strong password for admin who can edit and update any thing in the app
@@ -34,7 +42,10 @@ ControlPanelAdminPasswordViewer= "xxxxxxxxxx-xxxx" # put strong password for adm
 
 isOneSignalEnabled ="false" # set to true if you can provide oneSignalAppId and oneSignalApiKey to enable push by onesignal
 isFirebaseFcmEnabled ="false" # set to true if you provide the firebase admin.json file
+
+#set onesignal data if you support it by set isOneSignalEnabled to true
 oneSignalAppId="xxxxxxxxx-xxxxx-xxxxx-xxxx-xxxxxxxxx"
+#set onesignal data if you support it by set isOneSignalEnabled to true
 oneSignalApiKey="xxxxxxxxx"
 
 # SET THE Email data to let use use forget password OTP
@@ -122,8 +133,8 @@ AGORA_APP_CERTIFICATE=""
 ### Running the Code (With Docker)
 
 1. Install [Docker](https://www.docker.com) and Docker Compose.
-2. update `.env.production` this keys from `mongodb://127.0.0.1:27017/v_chat_sdk_v2`
-   to `mongodb://v_mongodb:27017/v_chat_sdk_v2`
+2. update `.env.production` this keys `DB_URL=` from `mongodb://127.0.0.1:27017/super_up`
+   to `DB_URL=mongodb://myuser_xxx:mypassword_xxx@mongo:27017/super_up?authSource=admin`
 3. Run the `Dockerfile` if Docker is already installed on your system. Note that this only sets up v_chat_sdk and
    doesn't include MongoDB or Redis. You need to manage these separately OR.
 4. Use a `compose file` witch manage all dependency together.

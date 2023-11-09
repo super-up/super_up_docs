@@ -65,7 +65,5 @@ purchase [v-chat-sdk](https://codecanyon.net/item/flutter-chat-app-with-node-js-
 :::
 
 :::tip Contact me
-Iam offer paid full server side setup
-Support email`hatemragapdev@gmail.com`
-Or on Skype at `live:.cid.607250433850e3a6`
+Iam offer paid full server side [setup](./support.md)
 :::
