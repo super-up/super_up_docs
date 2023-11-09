@@ -8,6 +8,9 @@ sidebar_position: 4
 
 **Choose Your Perfect Plan for Super Up Chat App Deployment**
 
+![](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3aeaaa69-ae76-4276-9edf-12211c1f0153)
+
+
 Welcome to Super Up Chat App services! Our chat application, crafted with Flutter, provides a seamless multi-platform
 communication experience. Whether you're just starting or looking to expand your reach, we have a plan that fits your
 needs.
@@ -58,10 +61,13 @@ Absolutely, you can conclude your plans with an option for customization to meet
 
 **Tailored Solutions for Your Business:**
 
-In addition to the above plans, we also offer a **full app rebuild service** to fit the unique demands of your business. Whether you require specific features, design changes, or unique integrations, we can craft a solution that aligns perfectly with your vision.
+In addition to the above plans, we also offer a **full app rebuild service** to fit the unique demands of your business.
+Whether you require specific features, design changes, or unique integrations, we can craft a solution that aligns
+perfectly with your vision.
 
 - **Custom Rebuild:** Contact us with your requirements, and we will provide you with a bespoke quote.
-- **Flexible Solutions:** We are committed to flexibility and will work closely with you to ensure that the final product meets your business objectives.
+- **Flexible Solutions:** We are committed to flexibility and will work closely with you to ensure that the final
+  product meets your business objectives.
 
 Reach out to us through our Envato profile for a consultation and custom quote.
 
@@ -69,8 +75,8 @@ Let's create a chat app that's uniquely yours!
 
 --- 
 
-Adding this section provides a complete spectrum of services from standard plans to fully customized solutions, catering to a wider range of customers and their varying needs.
-
+Adding this section provides a complete spectrum of services from standard plans to fully customized solutions, catering
+to a wider range of customers and their varying needs.
 
 **Additional Information:**
 
@@ -80,13 +86,18 @@ Adding this section provides a complete spectrum of services from standard plans
   prices.
 - **Timeframe:** The indicated delivery times are from the start of the project.
 
-Let's launch your chat app together!
+## Let's launch your chat app together!
 
 :::tip Purchase
 To get Support you need to contact me at
 Support email `hatemragapdev@gmail.com`
 OR Reach out to us through our `Envato` profile
 Or on Skype at `live:.cid.607250433850e3a6`
+:::
+
+:::tip Purchase_2
+You should purchase the app first from codecanyou
+and send your purchase key in the email so i can process the support for you
 :::
 
 ---
