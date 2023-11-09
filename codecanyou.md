@@ -85,7 +85,7 @@ Welcome to Super up chat app the most complete chat app in flutter!
 ## FEATURES Admin (Apps)
 
 - See all users with time of join and search of them
-- See the number of users (deleted,online,etc...)
+- See the number of users (deleted, online, etc...)
 - See more about all devices that use the app
 - Messages and Chat Rooms counter and more
 - See all counties that uses your app and its number!
@@ -93,9 +93,24 @@ Welcome to Super up chat app the most complete chat app in flutter!
 - See all information about specific user
 - Send notification to all users who use the app!
 - Control Your chat app like allow calls or show ads and more!
-- set max limit for group of chat and broadcast also
+- set max limit for a group of chat and broadcast also
 - there are more to discover in the admin app give it try!
 - admin app is responsive you can use it even on mobile and generate apk or web for it!
 - 16 language support for admin also 
 
-[![fram_3](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3aeaaa69-ae76-4276-9edf-12211c1f0153)](https://super-up.github.io/super_up_docs/docs/support)
+## Why to purchase
+1. No Firebase high-cost price!
+2. Self-deployment server you will have full access to your database!
+3. Fast and secure with Node.js
+4. Support for android, ios,mac,windows,macOs included in the source code with same price
+5. Support an admin panel included in the source code with same price
+6. Support up to 16 languages and more in next updates
+7. Full customizable 
+8. Clean code with SOLD principles
+
+## VCHATSDK
+- i have another product in codecanyou you can check it from
+
+[![VCHATSDK](https://github.com/hatemragab/v_chat_sdk/assets/37384769/63458339-18a4-4e2a-aa3c-ad527ed48edc)](https://codecanyon.net/item/flutter-chat-app-with-node-js-and-socket-io-mongo-db/reviews/26142700)
+
+[![fram_3](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3aeaaa69-ae76-4276-9edf-12211c1f0153)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
