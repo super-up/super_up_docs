@@ -2,10 +2,7 @@
 
 ---
 
-```
-Welcome to Super up chat app the most complete chat app in flutter!
-```
-
+- Welcome to **Super up** chat app the most complete chat app in flutter!
 - SuperUp Cupertino Theme Full Whatsapp chat Clone Socket.io And Mongodb With Flutter
 - In this app we will see the following features
 - First, you can check out our online documentation
@@ -87,7 +84,8 @@ Welcome to Super up chat app the most complete chat app in flutter!
   tracking, deletion for oneself and all receivers, media sharing from external apps, and more.
 - Delete and delete from all functions in message
 - From admin panel you can set max limit for group members and broadcast and max forward,share message limit,max media
-  upload size and more
+  Upload size and more
+- Messages search
 - You can ban users from use the app from an admin panel and more!!
 - You can see statistical analysis of messages and rooms and users in an admin panel
 - Clean UI/UX app clone from whatsapp for ios
@@ -96,6 +94,7 @@ Welcome to Super up chat app the most complete chat app in flutter!
 - User Profile View
 - See All Joined Users management system for group chats users,admins,superAdmins
 - More and more you will discover inside the demo!
+- More updates will be available soon
 
 ## FEATURES Admin (Apps)
 
@@ -112,6 +111,7 @@ Welcome to Super up chat app the most complete chat app in flutter!
 - there are more to discover in the admin app give it try!
 - admin app is responsive you can use it even on mobile and generate apk or web for it!
 - 16 language support for admin also
+- More updates will be available soon
 
 ## Why to purchase
 
@@ -123,6 +123,16 @@ Welcome to Super up chat app the most complete chat app in flutter!
 6. Support up to 16 languages and more in next updates
 7. Full customizable
 8. Clean code with SOLD principles
+
+## after purchasing (codecanyou)
+
+- You will get all files for flutter project `(android,ios,web,macos,windows)`
+- You will get the flutter `admin panel` project
+- Postman collection for all apis
+- Full nestjs code which its backend code
+- Full support for future updates
+- Free support for bug fixes only (there is paid support)
+- You can use this project to modify and edit it serve your `Customers` !
 
 ## VCHATSDK
 

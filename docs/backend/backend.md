@@ -141,6 +141,12 @@ AGORA_APP_CERTIFICATE=""
 5. Run `docker-compose up` to start the containers and view logs, or run `docker-compose up -d` to run in the
    background.
 
+### Running the Code (With Pm2)
+- [pm2](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page) is a popular framework for run the nodejs applications in background with high performance
+- You need first to install it by `npm install pm2@latest -g`
+- You run the app is already ready to run with pm2 by run `npm run pm2`
+- To see the logs in real time you can run `pm2 logs`
+
 ### Common Errors
 
 1. If you encounter the error `ERROR [ExceptionHandler] Configuration key "JWT_SECRET" does not exist`, it means NestJS
@@ -154,7 +160,5 @@ AGORA_APP_CERTIFICATE=""
    ,it means you have enabled FCM but have not [configured](https://www.youtube.com/watch?v=cXOzbKDXTh0) it.
 
 :::tip Contact me
-Iam offer paid full server side setup
-Support email`hatemragapdev@gmail.com`
-Or on Skype at `live:.cid.607250433850e3a6`
+Iam offer paid full server side setup See [Plans](../support.md)
 :::
