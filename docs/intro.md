@@ -15,12 +15,13 @@ sidebar_position: 1
 2. Nodejs `v17.9.1` or later in the backend side  [Nestjs](https://nestjs.com)
 3. [socket-io](https://socket.io) for real time management
 4. [mongodb](https://www.mongodb.com) for data storage v `v 5.*` or `v 6.*` only
-5. some backend tech Bearer token `JWT`,ORM `mongoose`,
+5. Some backend tech Bearer token `JWT`,ORM `mongoose`,
 6. [agora-io](https://www.agora.io) for video and voice calls
 7. All media saved on the server on your vps server
-8. `mailer` for send reset password OTP
-9. `firebase-admin` for push notifications
-10. `geoip-lite` and `request-ip` for detect user country
+8. Google maps for share chat location
+9. `mailer` for send reset password OTP
+10. `firebase-admin` for push notifications
+11. `geoip-lite` and `request-ip` for detect user country
 
 :::tip Firebase
 This project not user firebase to save any data it only use the free firebase
