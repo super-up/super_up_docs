@@ -27,6 +27,21 @@ melos bs
 - packages all needed packages the most important packages is the `super_up_core` the `s_constants.dart` in
   the `lib/src`
 
+
+### Lest explain packages
+1. `s_translate` contains all arb files for `super_up_app`,`super_up_admin` projects
+2. `super_up_core` contains all logic for super up app itself like shared http requests,utils,widgets (DONT UPDATE)
+3. `v_chat_firebase` contains the firebase FCM only logic (DONT UPDATE)
+4. `v_chat_input_ui` this contains the ui and logic for the message input (recorder,file selector,location picker)
+![](../img/pk_text_field.png)
+
+5. `v_chat_media_editor` this contains the ui of media editor
+![](../img/pk_media_editor.png)
+6. `v_chat_message_page` this contains the `ui & logic` of message page
+![](../img/pk_message.png)
+7. `v_chat_room_page` this contains the `ui & logic` of chat page
+   ![](../img/pk_chats.png)
+8. `v_chat_sdk_core` contains all logic for v_chat app itself like shared http requests, socket,notifications (DONT UPDATE)
 ### Change app name,package,logo
 
 - each app must have `unique` package name so you must change it! to be accepted in the stores

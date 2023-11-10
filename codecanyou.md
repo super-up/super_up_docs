@@ -94,6 +94,7 @@
 - User Profile View
 - See All Joined Users management system for group chats users,admins,superAdmins
 - More and more you will discover inside the demo!
+- Max file code length is 400 all code is clean code can be edit easily!
 - More updates will be available soon
 
 ## FEATURES Admin (Apps)
