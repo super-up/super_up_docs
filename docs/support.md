@@ -8,7 +8,7 @@ sidebar_position: 4
 
 **Choose Your Perfect Plan for Super Up Chat App Deployment**
 
-![](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3aeaaa69-ae76-4276-9edf-12211c1f0153)
+![](https://github.com/hatemragab/v_chat_sdk/assets/37384769/7760437f-17a9-4c38-9b2b-4e067abaa1dc)
 
 
 Welcome to Super Up Chat App services! Our chat application, crafted with Flutter, provides a seamless multi-platform
