@@ -6,6 +6,7 @@
 - SuperUp Cupertino Theme Full Whatsapp chat Clone Socket.io And Mongodb With Flutter
 - In this app we will see the following features
 - First, you can check out our online documentation
+- GET **33%** **_99$_** => ~~150$~~  discount NOW for the initial release FROM **18 NOV 2023** to **18 DEC 2023**
 
 [![docs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d60ae209-ec42-4e47-ad12-44b901daf883)](https://super-up.github.io/super_up_docs/docs/intro)
 [![contact](https://github.com/hatemragab/v_chat_sdk/assets/37384769/0e94b63c-125f-44c4-8088-71ecfd182fbf)](https://super-up.github.io/super_up_docs/docs/support)
@@ -141,4 +142,6 @@
 
 [![VCHATSDK](https://github.com/hatemragab/v_chat_sdk/assets/37384769/63458339-18a4-4e2a-aa3c-ad527ed48edc)](https://codecanyon.net/item/flutter-chat-app-with-node-js-and-socket-io-mongo-db/reviews/26142700)
 
-[![fram_3](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3aeaaa69-ae76-4276-9edf-12211c1f0153)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
+[![](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d34777a0-23f7-443c-9f47-285b4280361b)](https://github.com/hatemragab)
+
+[![fram_3](https://github.com/hatemragab/v_chat_sdk/assets/37384769/4fcf14fc-0df9-4548-a42b-e65a6c383a7e)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)

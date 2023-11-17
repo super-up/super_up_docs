@@ -73,8 +73,8 @@ AGORA_APP_CERTIFICATE=""
    obtain the `firebase.adminsdk.json` file.
 3. Replace the existing `firebase.adminsdk.json` file with your new one.
 4. open your account in `firebase` then enable the `Cloud Messaging API (Legacy)` from
-   ![](../img/firebase1.png)
-   ![](../img/firebase2.png)
+   ![](img/firebase1.png)
+   ![](img/firebase2.png)
 
 ### Obtaining OneSignal Keys
 
@@ -160,5 +160,5 @@ AGORA_APP_CERTIFICATE=""
    ,it means you have enabled FCM but have not [configured](https://www.youtube.com/watch?v=cXOzbKDXTh0) it.
 
 :::tip Contact me
-Iam offer paid full server side setup See [Plans](../support.md)
+Iam offer paid full server side setup See [Plans](support.md)
 :::

@@ -20,7 +20,7 @@ melos bs
 ```
 
 - this code will run pub get for you in all packages
-  ![](../img/flutter_project_strc.png)
+  ![](img/flutter_project_strc.png)
 - we have the following
 - apps (`super_up_admin`) this is the admin panel
 - apps (`super_up_app`) this app you should run it
@@ -33,14 +33,14 @@ melos bs
 2. `super_up_core` contains all logic for super up app itself like shared http requests,utils,widgets (DONT UPDATE)
 3. `v_chat_firebase` contains the firebase FCM only logic (DONT UPDATE)
 4. `v_chat_input_ui` this contains the ui and logic for the message input (recorder,file selector,location picker)
-   ![](../img/pk_text_field.png)
+   ![](img/pk_text_field.png)
 
 5. `v_chat_media_editor` this contains the ui of media editor
-   ![](../img/pk_media_editor.png)
+   ![](img/pk_media_editor.png)
 6. `v_chat_message_page` this contains the `ui & logic` of message page
-   ![](../img/pk_message.png)
+   ![](img/pk_message.png)
 7. `v_chat_room_page` this contains the `ui & logic` of chat page
-   ![](../img/pk_chats.png)
+   ![](img/pk_chats.png)
 8. `v_chat_sdk_core` contains all logic for v_chat app itself like shared http requests, socket,notifications (DONT
    UPDATE)
 
@@ -148,7 +148,7 @@ abstract class SConstants {
 - Create agora app and enable it copy the `appId` and enable
 - Setup video and voice calls [agora](https://agora.io)
   `Static const agoraAppId = "------------------------";`
-  ![](../img/agora.png)
+  ![](img/agora.png)
 - enable the `Secondary Certificate`
 
 ### Google api key
@@ -174,28 +174,28 @@ abstract class SConstants {
 
 - Navigate to `Certificates, Identifiers & Profiles > Keys >` Add New from the left menu.
 
-![](../img/xcode1.png)
+![](img/xcode1.png)
 
 - Register a New key.
 - Set the key name as `FirebaseAPNS`.
 - Tick “Apple Push Notification Services (APNs)”
 - Click Continue to register it.
-- ![](../img/xcode2.png)
+- ![](img/xcode2.png)
 - Once the key is registered follow below steps:
 - Copy the Team ID (keep it aside)
 - Download the Auth key File (keep it aside)
 - Copy the Key ID (keep it aside)
 - Click “Done” to complete.
-- ![](../img/xcode3.png)
+- ![](img/xcode3.png)
 - Open Firebase Dashboard > Project Settings
-- ![](../img/xcode4.png)
+- ![](img/xcode4.png)
 - Click on “Cloud Messaging” tab. For the iOS app, click “Upload”.
-- ![](../img/xcode5.png)
+- ![](img/xcode5.png)
 - Click on “Browse” to upload the recently downloaded Auth key file.
 - Paste the Key ID
 - Paste the Team ID
 - Click upload to register it.
-  ![](../img/xcode6.png)
+  ![](img/xcode6.png)
 - All done now with ios `notifications`
 
 ### how to update theme

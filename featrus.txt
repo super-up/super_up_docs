@@ -1,5 +1,21 @@
 SuperUp - Cupertino Theme Full Whatsapp Clone Socket.io And Mongodb With Flutter
 
+flutter,
+real-time chat,
+node.js,
+mongodb,
+socket.io,
+mobile app,
+messaging app,
+cross-platform,
+chat application,
+instant messaging,
+push notifications,
+scalable architecture,
+user-friendly interface,
+cloud database,
+social networking
+
 - This app almost whatsapp clone will all functions works like whatsapp exactly!
 - No Firebase is used only used for push notification and you can switch to OneSignal
 - Docker ready
