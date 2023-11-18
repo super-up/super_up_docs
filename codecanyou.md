@@ -72,7 +72,7 @@
 - Logout for the app
 - Group chat mentions
 - Nicknames support
-- Voice and video calls using agora.io
+- Voice and video calls using agora.io For Android,Ios only
 - Send Text, image, video, voice note, documents, location share
 - Full support for offline chat even you send message while the app has a bad network it will resend
 - We support 4 type for message status exactly like whatsapp (pending,send,delivered, seen) all states work excellently

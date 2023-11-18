@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 # Get Support
@@ -96,7 +96,7 @@ Or on Skype at `live:.cid.607250433850e3a6`
 :::
 
 :::tip Purchase_2
-You should purchase the app first from codecanyou
+You should purchase the app first from `codecanyou`
 and send your purchase key in the email so i can process the support for you
 :::
 

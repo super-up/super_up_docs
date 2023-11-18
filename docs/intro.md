@@ -54,7 +54,7 @@ FCM for push notifications only! `No for firebase high cost!`
 - Full nestjs code which its backend code
 - Full support for future updates
 - Free support for bug fixes only (there is paid support)
-- You can use this project to modify and edit it serve your `Customers` !
+- You can use this project to modify and edit it serve your `Customer` !
 
 :::tip VCHAT SDK
 This project use [v-chat-sdk](https://github.com/hatemragab/v_chat_sdk) under the hood to serve the chat part
