@@ -53,6 +53,7 @@ The full package for maximum reach across all platforms.
 - Compilation and build for the .ipa and macOS app versions.
 - Publishing support for iOS, macOS, and Windows (*Apple Developer Account fee of $100 and Microsoft Account fees not
   included*).
+- I will manage future updates for you in this plan!
 - **Delivery Time:** Ready within 3 to 7 days.
 
 ---
@@ -93,6 +94,7 @@ To get Support you need to contact me at
 Support email `hatemragapdev@gmail.com`
 OR Reach out to us through our `Envato` profile
 Or on Skype at `live:.cid.607250433850e3a6`
+Or on [whatsapp](https://wa.me/+201026488379) `+201026488379` 
 :::
 
 :::tip Purchase_2

@@ -51,3 +51,49 @@ Hello thanks for your comment,
 
 - Since there is no flutter package support Desktop voice reorder i have disabled it for now next updates i will make it
   works
+
+### Bug while releasing android (Your project requires a newer version of kotlin)
+
+- This bug isn't related to the kotlin (^_^)
+- You need to configure the android for release generate
+- In the android folder create `key.properties` and fill it out with the data of your `jks` key
+- Create your `jks`
+
+```
+storePassword=your storePassword
+keyPassword=your keyPassword
+keyAlias=your keyAlias
+storeFile=/Users/hatemragap/super-up-keystore.jks
+```
+
+- if you dont use the `jks` and not publish to google play you can simply do the following
+- open `android/app/build.gradle`
+- Replace the  [following](https://docs.flutter.dev/deployment/android#create-an-upload-keystore)
+
+```
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+        }
+    }
+```
+
+to Delete the `signingConfigs{}`
+
+```
+  buildTypes {
+        release {
+            // TODO: Add your own signing config for the release build.
+            // Signing with the debug keys for now, so `flutter run --release` works.
+            signingConfig signingConfigs.debug
+        }
+    }
+```
