@@ -145,3 +145,20 @@
 [![](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d34777a0-23f7-443c-9f47-285b4280361b)](https://github.com/hatemragab)
 
 [![fram_3](https://github.com/hatemragab/v_chat_sdk/assets/37384769/4fcf14fc-0df9-4548-a42b-e65a6c383a7e)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
+
+
+<pre><code>
+- Update 4 December 2023  
+- new message ui theme
+- link now can be previewed 
+- support for last flutter version 3.16
+- add support for web and windows notifications 
+- fix broadcast and block contacts views 
+- fix in web infinite load after update bio
+- improve agora calls ui add timer and speaker 
+- delete call logs support 
+- add more banner and interstitial support 
+- add isPeime is user is prime you can update if from admin then the user ads will stop showing for him
+- add isVerified if user is verified you can update it from admin then verify badge will appear to him in search 
+- improve chats messages search 
+</code></pre>

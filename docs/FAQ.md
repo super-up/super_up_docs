@@ -10,6 +10,9 @@ sidebar_position: 4
 - Data collected from user while register is `Device Data` User location from his ip
 - `Email` `Password` `Name` is required while user registers `bio`,`image` is Optional
 - Users can Reset their password by sending Email OTP
+- Data collected from user while register is `Device Data` User location from his ip
+- `Email` `Password` `Name` is required while user registers `bio`,`image` is Optional
+- Users can Reset their password by sending Email OTP
 
 ### New features
 
@@ -36,12 +39,7 @@ sidebar_position: 4
 - Are pre-configured service like agora.io with a good price, and it has 1K minutes free for each month
 - And it is more stable and scalable with a high quality, So I switch to it!
 
-Hello thanks for your comment,
 
-- Users can register only by their `Email` and `password`
-- Data collected from user while register is `Device Data` User location from his ip
-- `Email` `Password` `Name` is required while user registers `bio`,`image` is Optional
-- Users can Reset their password by sending Email OTP
 
 ### Admin panel
 

@@ -125,8 +125,12 @@ abstract class SConstants {
 - get the ids from these urls get banner id for ios and android
 - android and ios admob
   ids [quick-start](https://developers.google.com/admob/flutter/quick-start)  [mobile-ads-sdk](https://developers.google.com/ad-manager/mobile-ads-sdk/flutter/quick-start)
-- dont forget to update the android `android/app/src/main/AndroidManifest.xml`
-
+- dont forget to update the android add the ads app Id `android/app/src/main/AndroidManifest.xml`
+- and for ios open `ios/Runder/info.plist` update the
+    ```
+  		<key>GADApplicationIdentifier</key>
+		<string>Your app id</string>
+  ```
 - `APPLICATION_ID` not unit id be `careful`
 
 ```xml

@@ -46,6 +46,20 @@ FCM for push notifications only! `No for firebase high cost!`
    to enable it `Optional`
 10. For run ios you need paid apple developer [account](https://developer.apple.com) (99$) per year
 
+
+
+### Try the app Now! it available on 5 platform thanks to Flutter!
+
+[![test_1_android](https://github.com/hatemragab/v_chat_sdk/assets/37384769/2e950620-1c10-4253-8944-881bb448d559)](https://play.google.com/store/apps/details?id=com.superup.online)
+[![test_2_ios](https://github.com/hatemragab/v_chat_sdk/assets/37384769/ccbbfeeb-eecd-45b4-bf68-9325af0c50d6)](https://apps.apple.com/us/app/super-up/id6445877902)
+[![test_3_macOs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/77bfa5ae-d52b-4243-88f6-186f06460315)](https://apps.apple.com/us/app/super-up/id6445877902?mt=12)
+[![test_4_web_chat](https://github.com/hatemragab/v_chat_sdk/assets/37384769/c7abc29c-3a34-4181-830c-61a72e6f17fe)](https://web.superupdev.online)
+[![test_5_admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/97ac93e0-d210-49bd-8930-47b1daa43b2d)](https://admin.superupdev.online/)
+[![test_6_windows](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3719f39a-662d-43f2-abda-003391bbc231)](https://apps.microsoft.com/detail/9PMDVDSG91F1?hl=en-eg)
+
+
+
+
 ### after purchasing (codecanyou)
 
 - You will get all files for flutter project `(android,ios,web,macos,windows)`
