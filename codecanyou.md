@@ -67,6 +67,7 @@
 - Settings tab (light mode,dark mode)
 - Settings tab update account name ,Bio,image,password,delete my account
 - Star messages
+- One Time seen message!
 - Manage device page (see all app devices and logout for anyone)
 - Support for language 16 already included in the packages
 - Admin notification so admin can send notification to all users
@@ -155,6 +156,7 @@
 
 <pre><code>
 - Update 16 Feb 2024  
+- One Time seen message You can enable it from chat settings after that the message will appear once
 - Add My Privacy tab in settings 
 - Support to hide your account from public 
 - Support to hide your last seen

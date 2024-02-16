@@ -18,8 +18,8 @@ sidebar_position: 4
 If you face this 
 ```error building IOS. What should I do if I have the following problem? [Failed to install the app on the device.Domain: The parent bundle has the same identifier]```
 - this comes from the ShareExtension in xcode select it under the target and Runner update the ShareExtension bundle id it should be the same as your bundle id and attach to it .ShareExtension and it will works
-- For more info, check out this [page](https://github.com/ShoutSocial/share_handler) 
-
+- For more info, check out this [page](https://github.com/ShoutSocial/share_handler)
+  ![image](https://github.com/hatemragab/v_chat_sdk/assets/37384769/c5e3b179-1b5f-4ee1-bd57-d8a1d431ec95)
 
 ### New features
 
