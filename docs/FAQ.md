@@ -24,7 +24,7 @@ If you face this
 ### New features
 
 - I have built this app to be suitable for most of all users as I can
-- So sure there are some features you will need it for your business this you can [contact me](./support.md) to
+- So sure there are some features you will need it for your business this
 - See more details about your custom features
 
 ### Phone Login
