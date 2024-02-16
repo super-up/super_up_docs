@@ -6,7 +6,6 @@
 - SuperUp Cupertino Theme Full Whatsapp chat Clone Socket.io And Mongodb With Flutter
 - In this app we will see the following features
 - First, you can check out our online documentation
-- GET **33%** **_99$_** => ~~150$~~  discount NOW for the initial release FROM **18 NOV 2023** to **18 DEC 2023**
 
 [![docs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d60ae209-ec42-4e47-ad12-44b901daf883)](https://super-up.github.io/super_up_docs/docs/intro)
 [![contact](https://github.com/hatemragab/v_chat_sdk/assets/37384769/0e94b63c-125f-44c4-8088-71ecfd182fbf)](https://super-up.github.io/super_up_docs/docs/support)
@@ -16,6 +15,12 @@
 ![web](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3aa3cfd3-b877-4ca7-8e3c-6781e3ca5462)
 ![admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/67d49a6a-ff03-4099-b7f0-05097bdc1069)
 ![admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/243a9312-1370-4428-a8b8-e6412417980a)
+
+
+- New in updates 14 Feb 2024
+
+![updates](https://github.com/hatemragab/v_chat_sdk/assets/37384769/585cd0d2-3041-45b0-aaee-55bb3ae43e5e)
+
 
 - Try the app Now! it available on 5 platform thanks to Flutter!
 
@@ -69,6 +74,8 @@
 - In app notification mute for all chats
 - Help (contact us) and (privacy policy page)
 - Check for update
+- User privacy 
+- Message upload and download progress
 - Logout for the app
 - Group chat mentions
 - Nicknames support
@@ -146,7 +153,18 @@
 
 [![fram_3](https://github.com/hatemragab/v_chat_sdk/assets/37384769/4fcf14fc-0df9-4548-a42b-e65a6c383a7e)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
 
-
+<pre><code>
+- Update 16 Feb 2024  
+- Add My Privacy tab in settings 
+- Support to hide your account from public 
+- Support to hide your last seen
+- Add Create stories like whatsapp text,media with caption
+- Add progress for download and upload (Mobile)
+- Add Storage and Data in Settings which will control how media auto-download works 
+- You can see and clear caches 
+- Fix Some bugs
+- Prepare for Chat requests which will come later
+</code></pre>
 <pre><code>
 - Update 4 December 2023  
 - new message ui theme
