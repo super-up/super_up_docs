@@ -14,6 +14,13 @@ sidebar_position: 4
 - `Email` `Password` `Name` is required while user registers `bio`,`image` is Optional
 - Users can Reset their password by sending Email OTP
 
+### Ios Run Bug
+If you face this 
+```error building IOS. What should I do if I have the following problem? [Failed to install the app on the device.Domain: The parent bundle has the same identifier]```
+- this comes from the ShareExtension in xcode select it under the target and Runner update the ShareExtension bundle id it should be the same as your bundle id and attach to it .ShareExtension and it will works
+- For more info, check out this [page](https://github.com/ShoutSocial/share_handler) 
+
+
 ### New features
 
 - I have built this app to be suitable for most of all users as I can
@@ -25,11 +32,7 @@ sidebar_position: 4
 - As this is whatsapp clone but i use the Email and password for login because
 - I see this will be `suitable` for all users since I dont need to depends on firebase for `Auth`!
 
-### Window,web notifications
-
-- There is no Flutter package until now support native notifications in the web,window
-- So i use in app notifications for web and windows I will improve it in the next release (add sound)
-  ![web_notifiactions](./img/web_notifiactions.png)
+ 
 
 ### Why not to use webRTC for calls
 
@@ -51,7 +54,7 @@ sidebar_position: 4
   works
 
 ### Bug while releasing android (Your project requires a newer version of kotlin)
-
+- `Fixed in last release`
 - This bug isn't related to the kotlin (^_^)
 - You need to configure the android for release generate
 - In the android folder create `key.properties` and fill it out with the data of your `jks` key
