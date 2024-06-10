@@ -155,6 +155,13 @@
 [![fram_3](https://github.com/hatemragab/v_chat_sdk/assets/37384769/4fcf14fc-0df9-4548-a42b-e65a6c383a7e)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
 
 <pre><code>
+- Update 10 June 2024  
+- Update all packages
+- Support flutter sdk v 3.22 and above
+- prepare for the new VOIP call like whatsapp
+</code></pre>
+
+<pre><code>
 - Update 16 Feb 2024  
 - One Time seen message You can enable it from chat settings after that the message will appear once
 - Add My Privacy tab in settings 
