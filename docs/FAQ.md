@@ -15,9 +15,12 @@ sidebar_position: 4
 - Users can Reset their password by sending Email OTP
 
 ### Ios Run Bug
-If you face this 
+
+If you face this
 ```error building IOS. What should I do if I have the following problem? [Failed to install the app on the device.Domain: The parent bundle has the same identifier]```
-- this comes from the ShareExtension in xcode select it under the target and Runner update the ShareExtension bundle id it should be the same as your bundle id and attach to it .ShareExtension and it will works
+
+- this comes from the ShareExtension in xcode select it under the target and Runner update the ShareExtension bundle id
+  it should be the same as your bundle id and attach to it .ShareExtension and it will works
 - For more info, check out this [page](https://github.com/ShoutSocial/share_handler)
   ![image](https://github.com/hatemragab/v_chat_sdk/assets/37384769/c5e3b179-1b5f-4ee1-bd57-d8a1d431ec95)
 
@@ -32,8 +35,6 @@ If you face this
 - As this is whatsapp clone but i use the Email and password for login because
 - I see this will be `suitable` for all users since I dont need to depends on firebase for `Auth`!
 
- 
-
 ### Why not to use webRTC for calls
 
 - I have already tried to add webRTC and already works, but I found the following
@@ -42,7 +43,11 @@ If you face this
 - Are pre-configured service like agora.io with a good price, and it has 1K minutes free for each month
 - And it is more stable and scalable with a high quality, So I switch to it!
 
+### Call notifications
 
+- Currently the app calls works by send notifications like a chat notification
+- it says there are some one want to call with you not pop up in full screen like whatsapp
+- iam working on update and improve this function
 
 ### Admin panel
 
@@ -54,6 +59,7 @@ If you face this
   works
 
 ### Bug while releasing android (Your project requires a newer version of kotlin)
+
 - `Fixed in last release`
 - This bug isn't related to the kotlin (^_^)
 - You need to configure the android for release generate
@@ -98,3 +104,14 @@ to Delete the `signingConfigs{}`
         }
     }
 ```
+
+### Plan Support requirements
+
+1. Firebase account or create app and invite me as owner to it you can remove me after install `hatemragapdev@gmail.com`
+2. VPS cpu with AVX support 2 cpu and 2 ram or more with 100GB ssd storage
+3. Domain name pointed to the vps with wild card * [See for more info](https://caprover.com/docs/get-started.html#step-2-connect-root-domain) you can host at namecheap i will configure the ssl with lets encrypted
+4. Agora.io account with 10$ billing (optional) can be done later
+5. Google maps api key with place search enabled; it will require enable billing (optional) can be done later
+6. App name app logo email for support 
+7. Iam use this service for upload the backend code [Caprover](https://caprover.com/)
+8. if you want me to upload the app by myself add me to google play console and apple also with same email `hatemragapdev@gmail.com`
