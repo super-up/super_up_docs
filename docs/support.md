@@ -26,7 +26,7 @@ Ideal for beginners who want to set up the server side.
     - MongoDB setup with security optimizations.
     - Free SSL certification installation for secure connections.
     - Full Node.js environment setup.
-- **Delivery Time:** Ready within 1 to 2 days.
+- **Delivery Time:** Ready within 3 to 5 days.
 
 ### **Standard Plan - $200 (Android, Web, Admin Panel)**
 
@@ -40,7 +40,7 @@ A step-up for those ready to launch their Android and Web presence.
     - Compilation of the Android APK, Web Chat, and Admin Panel.
     - Integration of third-party services (Agora.io, Google Ads, Google Maps, Firebase).
 - Assistance with publishing the app on the Google Play Console (*Google Developer Account fee of $25 not included*).
-- **Delivery Time:** Ready within 3 to 7 days.
+- **Delivery Time:** Ready within 7 to 10 days.
 
 ### **Premium Plan - $300 (Android, Web, Admin Panel, Windows, iOS, macOS)**
 
@@ -54,7 +54,7 @@ The full package for maximum reach across all platforms.
 - Publishing support for iOS, macOS, and Windows (*Apple Developer Account fee of $100 and Microsoft Account fees not
   included*).
 - I will manage future updates for you in this plan!
-- **Delivery Time:** Ready within 7 to 10 days.
+- **Delivery Time:** Ready within 10 to 15 days.
 
 ---
 
