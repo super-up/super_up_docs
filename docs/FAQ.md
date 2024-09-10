@@ -115,4 +115,4 @@ to Delete the `signingConfigs{}`
 6. App name app logo email for support 
 7. Iam use this service for upload the backend code [Caprover](https://caprover.com/)
 8. if you want me to upload the app by myself add me to google play console and apple also with same email `hatemragapdev@gmail.com`
-9. Please not the support only available for one product each product you deploy will require to pay its fees
+9. The support is only available for one product each product you deploy will require to pay its fees of upload one of the plans above
