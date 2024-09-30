@@ -30,6 +30,12 @@ If you face this
 - So sure there are some features you will need it for your business this
 - See more details about your custom features
 
+### Stop ads
+- just update this values like this or you can stop it from the admin panel
+  ![image](./img/ads.jpeg)
+
+
+
 ### Phone Login
 
 - As this is whatsapp clone but i use the Email and password for login because
