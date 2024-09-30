@@ -72,9 +72,7 @@ AGORA_APP_CERTIFICATE=""
 2. To ensure chat notifications work properly, follow [this video](https://www.youtube.com/watch?v=cXOzbKDXTh0) to
    obtain the `firebase.adminsdk.json` file.
 3. Replace the existing `firebase.adminsdk.json` file with your new one.
-4. open your account in `firebase` then enable the `Cloud Messaging API (Legacy)` from
-   ![](img/firebase1.png)
-   ![](img/firebase2.png)
+
 
 ### Obtaining OneSignal Keys
 
