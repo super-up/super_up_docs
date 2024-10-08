@@ -111,6 +111,11 @@ to Delete the `signingConfigs{}`
     }
 ```
 
+### Flutter state management
+- i dont use any state management solutions available
+- instead of that i have created my own solution on top of flutter `valueNotifier` and `streams`
+
+
 ### Plan Support requirements
 
 1. Firebase account or create app and invite me as owner to it you can remove me after install `hatemragapdev@gmail.com`
