@@ -122,9 +122,10 @@ to Delete the `signingConfigs{}`
 2. VPS cpu with AVX support 2 cpu and 2 ram or more with 100GB ssd storage
 3. Domain name pointed to the vps with wild card * [See for more info](https://caprover.com/docs/get-started.html#step-2-connect-root-domain) you can host at namecheap i will configure the ssl with lets encrypted
 4. Agora.io account with 10$ billing (optional) can be done later
-5. Google maps api key with place search enabled; it will require enable billing (optional) can be done later
-6. Google ads banner ids for android and ios if you will enable it
+5. Google Maps api key with place search enabled; it will require enable billing (optional) can be done later
+6. Google Ads banner ids for android and ios if you will enable it
 7. App name app logo email for support 
 8. Iam use this service for upload the backend code [Caprover](https://caprover.com/)
-9. if you want me to upload the app by myself add me to google play console and apple also with same email `hatemragapdev@gmail.com`
-10. The support is only available for one product each product you deploy will require to pay its fees of upload one of the plans above
+9. if you want me to upload the app by myself add me to Google Play console and apple also with same email `hatemragapdev@gmail.com`
+10. App name app logo email for support
+11. The support is only available for one product each product you deploy will require to pay its fees of upload one of the plans above

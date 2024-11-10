@@ -154,6 +154,20 @@
 
 [![fram_3](https://github.com/hatemragab/v_chat_sdk/assets/37384769/4fcf14fc-0df9-4548-a42b-e65a6c383a7e)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
 
+
+
+
+
+<pre><code>
+- Update 7 Nov 2024  
+- Support new gradle update 8.9 
+- Support new flutter version 3.24.X
+- Upgrade all flutter packages to last version of today
+- Fix some bugs
+- improve call Ui
+- Support group calls
+</code></pre>
+
 <pre><code>
 - Update 10 June 2024  
 - Update all packages
@@ -174,6 +188,7 @@
 - Fix Some bugs
 - Prepare for Chat requests which will come later
 </code></pre>
+
 <pre><code>
 - Update 4 December 2023  
 - new message ui theme
