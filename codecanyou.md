@@ -23,7 +23,7 @@
 
 
 - Try the app Now! it available on 5 platform thanks to Flutter!
-
+- Admin login password is **super-up-strong-password-viewer**
 [![test_1_android](https://github.com/hatemragab/v_chat_sdk/assets/37384769/2e950620-1c10-4253-8944-881bb448d559)](https://play.google.com/store/apps/details?id=com.superup.online)
 [![test_2_ios](https://github.com/hatemragab/v_chat_sdk/assets/37384769/ccbbfeeb-eecd-45b4-bf68-9325af0c50d6)](https://apps.apple.com/us/app/super-up/id6445877902)
 [![test_3_macOs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/77bfa5ae-d52b-4243-88f6-186f06460315)](https://apps.apple.com/us/app/super-up/id6445877902?mt=12)

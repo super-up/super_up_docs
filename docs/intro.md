@@ -11,7 +11,7 @@ sidebar_position: 1
 
 ### technologies
 
-1. [Flutter](https://flutter.dev) for clint side last version or `v 3.13.7`
+1. [Flutter](https://flutter.dev) for clint side last version or `v 3.24.x`
 2. Nodejs `v17.9.1` or later in the backend side  [Nestjs](https://nestjs.com)
 3. [socket-io](https://socket.io) for real time management
 4. [mongodb](https://www.mongodb.com) for data storage v `v 5.*` or `v 6.*` only
