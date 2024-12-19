@@ -155,9 +155,6 @@
 [![fram_3](https://github.com/user-attachments/assets/f620288b-2023-4d70-9ddb-8f6044f3743a)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
 
 
-
-
-
 <pre><code>
 - Update 7 Nov 2024  
 - Support new gradle update 8.9 
