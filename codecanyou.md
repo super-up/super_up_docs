@@ -9,7 +9,7 @@
 
 [![docs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d60ae209-ec42-4e47-ad12-44b901daf883)](https://super-up.github.io/super_up_docs/docs/intro)
 [![contact](https://github.com/hatemragab/v_chat_sdk/assets/37384769/0e94b63c-125f-44c4-8088-71ecfd182fbf)](https://super-up.github.io/super_up_docs/docs/support)
-![fram_1](https://github.com/hatemragab/v_chat_sdk/assets/37384769/bddb6fa8-188e-4cfd-a6a9-9f10c8a7e5b9)
+![fram_1](https://github.com/user-attachments/assets/4c085512-06ed-447e-9248-a9eeebe5401b)
 ![fram_2](https://github.com/hatemragab/v_chat_sdk/assets/37384769/40e65ed5-13dd-46a8-a09d-eedf63882d46)
 
 ![web](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3aa3cfd3-b877-4ca7-8e3c-6781e3ca5462)
@@ -33,7 +33,7 @@
 
 ## Technologist
 
-1. [Flutter](https://flutter.dev) for clint side last version or `v 3.13.7`
+1. [Flutter](https://flutter.dev) for clint side last version or `v 3.24.x`
 2. Nodejs `v17.9.1` or later in the backend side  [Nestjs](https://nestjs.com)
 3. [socket-io](https://socket.io) for real time management
 4. [mongodb](https://www.mongodb.com) for data storage v `v 5.*` or `v 6.*` only
@@ -152,7 +152,7 @@
 
 [![](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d34777a0-23f7-443c-9f47-285b4280361b)](https://github.com/hatemragab)
 
-[![fram_3](https://github.com/hatemragab/v_chat_sdk/assets/37384769/4fcf14fc-0df9-4548-a42b-e65a6c383a7e)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
+[![fram_3](https://github.com/user-attachments/assets/f620288b-2023-4d70-9ddb-8f6044f3743a)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
 
 
 

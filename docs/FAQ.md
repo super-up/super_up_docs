@@ -31,10 +31,9 @@ If you face this
 - See more details about your custom features
 
 ### Stop ads
+
 - just update this values like this or you can stop it from the admin panel
   ![image](./img/ads.jpeg)
-
-
 
 ### Phone Login
 
@@ -112,20 +111,26 @@ to Delete the `signingConfigs{}`
 ```
 
 ### Flutter state management
+
 - i dont use any state management solutions available
 - instead of that i have created my own solution on top of flutter `valueNotifier` and `streams`
-
 
 ### Plan Support requirements
 
 1. Firebase account or create app and invite me as owner to it you can remove me after install `hatemragapdev@gmail.com`
 2. VPS cpu with AVX support 2 cpu and 2 ram or more with 100GB ssd storage
-3. Domain name pointed to the vps with wild card * [See for more info](https://caprover.com/docs/get-started.html#step-2-connect-root-domain) you can host at namecheap i will configure the ssl with lets encrypted
+3. Domain name pointed to the vps with wild
+   card * [See for more info](https://caprover.com/docs/get-started.html#step-2-connect-root-domain) you can host at
+   namecheap i will configure the ssl with lets encrypted
 4. Agora.io account with 10$ billing (optional) can be done later
 5. Google Maps api key with place search enabled; it will require enable billing (optional) can be done later
 6. Google Ads banner ids for android and ios if you will enable it
-7. App name app logo email for support 
-8. Iam use this service for upload the backend code [Caprover](https://caprover.com/)
-9. if you want me to upload the app by myself add me to Google Play console and apple also with same email `hatemragapdev@gmail.com`
-10. App name app logo email for support
-11. The support is only available for one product each product you deploy will require to pay its fees of upload one of the plans above
+7. App name app logo email for support
+8. To support forget password email reset code send via mail you need to get a SMTP server need the data `EMAIL_HOST`
+   `EMAIL_USER`  `EMAIL_PASSWORD`
+9. Iam use this service for upload the backend code [Caprover](https://caprover.com/)
+10. if you want me to upload the app by myself add me to Google Play console and apple also with same email
+    `hatemragapdev@gmail.com`
+11. App name app logo email for support
+12. The support is only available for one product each product you deploy will require to pay its fees of upload one of
+    the plans above

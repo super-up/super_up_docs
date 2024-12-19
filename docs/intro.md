@@ -22,6 +22,7 @@ sidebar_position: 1
 9. `mailer` for send reset password OTP
 10. `firebase-admin` for push notifications
 11. `geoip-lite` and `request-ip` for detect user country
+12. All `media` and `data` (messages texts and media) for this project are stored locally in the server
 
 :::tip Firebase
 This project not user firebase to save any data it only use the free firebase
