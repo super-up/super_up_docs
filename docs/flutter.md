@@ -200,6 +200,7 @@ abstract class SConstants {
 - Paste the Team ID
 - Click upload to register it.
   ![](img/xcode6.png)
+-  **VOIP** ios setup This key you have downloaded you need to put the content of it to the backend code at the file `AuthKey.p8` it contains `XXXX` just replace all content with the new one you have
 - All done now with ios `notifications`
 
 ### how to update theme
