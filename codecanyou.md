@@ -17,9 +17,12 @@
 ![admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/243a9312-1370-4428-a8b8-e6412417980a)
 
 
-- New in updates 14 Feb 2024
+- **New in updates 14 Feb 2024**
 
 ![updates](https://github.com/hatemragab/v_chat_sdk/assets/37384769/585cd0d2-3041-45b0-aaee-55bb3ae43e5e)
+
+- **New in updates 31 Jun 2025**
+![updates](https://github.com/user-attachments/assets/22d3891f-3aab-4ce6-b083-6f206579f0c4)
 
 
 - Try the app Now! it available on 5 platform thanks to Flutter!
@@ -154,6 +157,14 @@
 
 [![fram_3](https://github.com/user-attachments/assets/f620288b-2023-4d70-9ddb-8f6044f3743a)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
 
+<pre><code>
+- Update 31 Jan 2025  
+- Support native calls like whatsapp
+- improve call ui and group calls improved
+- support delete your story
+- upgrade flutter packages to support flutter 3.27.X
+- fix some bugs like checking on a message which been deleted
+</code></pre>
 
 <pre><code>
 - Update 7 Nov 2024  
