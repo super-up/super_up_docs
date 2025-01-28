@@ -172,7 +172,7 @@ abstract class SConstants {
 - `ios/Runner/AppDelegate.swift`
 - GMSServices.provideAPIKey(`YOUR API_KEY HERE!`)
 
-### Notifications iOS (APNS)
+### Notifications iOS (APNS) AND VOIP
 
 - Login to your Apple Developer Account,(if you don’t have, you need to create one to be able to test, publish ios app).
 

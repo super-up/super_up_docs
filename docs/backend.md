@@ -74,6 +74,64 @@ AGORA_APP_CERTIFICATE=""
 3. Replace the existing `firebase.adminsdk.json` file with your new one.
 
 
+
+### Setting Up Agora for Your Application
+
+This guide will walk you through setting up Agora for your application, retrieving the necessary keys, and ensuring proper configuration to enable live calls.
+
+---
+
+- Step 1: Create and Configure Your Agora Project
+1. **Log in to the Agora Console**
+   - Navigate to the [Agora Console](https://console.agora.io/).
+   - Log in or create a new account if you don’t have one.
+
+2. **Create a New Project**
+   - Go to the **Projects** section.
+   - Click **Create** to add a new project.
+   - Provide a name for your project and ensure you select the **Live** mode to enable live broadcasting features.
+
+3. **Enable Primary Certificate**
+   - After creating your project, go to the **Project Management** page.
+   - Locate your project and click on **Edit**.
+   - Ensure that the **Primary Certificate** is enabled. This is essential for secure communication and authentication.
+
+---
+
+- Step 2: Retrieve Your Agora Keys
+1. **Locate Your Project Keys**
+   - In the Agora Console, navigate to the **Project Details** section of your newly created project.
+
+2. **Get the `AGORA_APP_ID`**
+   - Copy the `App ID` value. This is your unique project identifier.
+
+3. **Get the `AGORA_APP_CERTIFICATE`**
+   - Scroll down to find the **Primary Certificate** section.
+   - Copy the value under **Primary Certificate**. This will be used for token generation and secure authentication.
+
+**Important Note:**
+Ensure you handle the `Primary Certificate` securely and never expose it publicly to prevent unauthorized access to your application.
+
+---
+
+- Step 3: Update Your `.env` File
+1. Open the `.env` file in your project’s root directory.
+
+2. Add or update the following keys with the values you retrieved from the Agora Console:
+   ```env
+   AGORA_APP_ID=your_agora_app_id_here
+   AGORA_APP_CERTIFICATE=your_agora_certificate_here
+   ```
+
+3. Ensure the values match exactly with those from the Agora Console. Any mismatch will prevent calls from working correctly.
+
+---
+
+- Step 4: Ensure Consistency in Your Flutter App
+  If you are using Flutter for the frontend,
+  inside the flutter `s_constants` file the value of `agoraAppId`
+
+
 ### Obtaining OneSignal Keys
 
 1. Create a Firebase account and follow [this video](https://www.youtube.com/watch?v=FOkgfsTwvC4) to obtain OneSignal
@@ -145,6 +203,10 @@ AGORA_APP_CERTIFICATE=""
 - You run the app is already ready to run with pm2 by run `npm run pm2`
 - To see the logs in real time you can run `pm2 logs`
 
+### AuthKey.p8
+- This key is required to make calls for ios VOIP ring you need to get it from [apple](./flutter.md#notifications-ios-apns-and-voip)
+
+
 ### Common Errors
 
 1. If you encounter the error `ERROR [ExceptionHandler] Configuration key "JWT_SECRET" does not exist`, it means NestJS
@@ -160,3 +222,7 @@ AGORA_APP_CERTIFICATE=""
 :::tip Contact me
 Iam offer paid full server side setup See [Plans](support.md)
 :::
+
+
+
+
