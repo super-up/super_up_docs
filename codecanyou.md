@@ -2,10 +2,13 @@
 
 ---
 
-- Welcome to **Super up** chat app the most complete chat app in flutter!
-- SuperUp Cupertino Theme Full Whatsapp chat Clone Socket.io And Mongodb With Flutter
+- Welcome to **Super Up**, the most complete chat app in Flutter!
+- Super Up: Cupertino‑styled full WhatsApp clone. Socket.io + MongoDB + Flutter.
 - In this app we will see the following features
 - First, you can check out our online documentation
+
+- Note: Apple may reject duplicate templates frequently submitted. Consider adding more features/branding before submission. Existing apps can submit as an update.
+  ![updates](https://github.com/user-attachments/assets/3be6793c-05f0-4c7a-9ed9-c403a88b7e1e)
 
 [![docs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d60ae209-ec42-4e47-ad12-44b901daf883)](https://super-up.github.io/super_up_docs/docs/intro)
 [![contact](https://github.com/hatemragab/v_chat_sdk/assets/37384769/0e94b63c-125f-44c4-8088-71ecfd182fbf)](https://super-up.github.io/super_up_docs/docs/support)
@@ -16,31 +19,33 @@
 ![admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/67d49a6a-ff03-4099-b7f0-05097bdc1069)
 ![admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/243a9312-1370-4428-a8b8-e6412417980a)
 
-
 - **New in updates 14 Feb 2024**
 
 ![updates](https://github.com/hatemragab/v_chat_sdk/assets/37384769/585cd0d2-3041-45b0-aaee-55bb3ae43e5e)
 
 - **New in updates 31 Jun 2025**
-![updates](https://github.com/user-attachments/assets/22d3891f-3aab-4ce6-b083-6f206579f0c4)
+  ![updates](https://github.com/user-attachments/assets/22d3891f-3aab-4ce6-b083-6f206579f0c4)
 
+- **New in updates 6 Aug 2025**
+  ![Image](https://github.com/user-attachments/assets/d9c7187a-01e1-4e5a-b5da-da1ad406f7b4)
+  ![Image](https://github.com/user-attachments/assets/0af89e73-259f-4ffa-8d2d-17c2945b3bcc)
 
-- Try the app Now! it available on 5 platform thanks to Flutter!
+- Try the app now! Available on 5 platforms thanks to Flutter.
 - Admin login password is **super-up-strong-password-viewer**
-[![test_1_android](https://github.com/hatemragab/v_chat_sdk/assets/37384769/2e950620-1c10-4253-8944-881bb448d559)](https://play.google.com/store/apps/details?id=com.superup.online)
-[![test_2_ios](https://github.com/hatemragab/v_chat_sdk/assets/37384769/ccbbfeeb-eecd-45b4-bf68-9325af0c50d6)](https://apps.apple.com/us/app/super-up/id6445877902)
-[![test_3_macOs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/77bfa5ae-d52b-4243-88f6-186f06460315)](https://apps.apple.com/us/app/super-up/id6445877902?mt=12)
-[![test_4_web_chat](https://github.com/hatemragab/v_chat_sdk/assets/37384769/c7abc29c-3a34-4181-830c-61a72e6f17fe)](https://web.superupdev.online)
-[![test_5_admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/97ac93e0-d210-49bd-8930-47b1daa43b2d)](https://admin.superupdev.online/)
-[![test_6_windows](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3719f39a-662d-43f2-abda-003391bbc231)](https://apps.microsoft.com/detail/9PMDVDSG91F1?hl=en-eg)
+  [![test_1_android](https://github.com/hatemragab/v_chat_sdk/assets/37384769/2e950620-1c10-4253-8944-881bb448d559)](https://play.google.com/store/apps/details?id=com.superup.online)
+  [![test_2_ios](https://github.com/hatemragab/v_chat_sdk/assets/37384769/ccbbfeeb-eecd-45b4-bf68-9325af0c50d6)](https://apps.apple.com/us/app/super-up/id6445877902)
+  [![test_3_macOs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/77bfa5ae-d52b-4243-88f6-186f06460315)](https://apps.apple.com/us/app/super-up/id6445877902?mt=12)
+  [![test_4_web_chat](https://github.com/hatemragab/v_chat_sdk/assets/37384769/c7abc29c-3a34-4181-830c-61a72e6f17fe)](https://web.superupdev.online)
+  [![test_5_admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/97ac93e0-d210-49bd-8930-47b1daa43b2d)](https://admin.superupdev.online/)
+  [![test_6_windows](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3719f39a-662d-43f2-abda-003391bbc231)](https://apps.microsoft.com/detail/9PMDVDSG91F1?hl=en-eg)
 
-## Technologist
+## Technologies
 
-1. [Flutter](https://flutter.dev) for clint side last version or `v 3.24.x`
-2. Nodejs `v17.9.1` or later in the backend side  [Nestjs](https://nestjs.com)
+1. [Flutter](https://flutter.dev) for client side (3.24.x+)
+2. Node.js `v17.9.1` or later for backend [NestJS](https://nestjs.com)
 3. [socket-io](https://socket.io) for real time management
 4. [mongodb](https://www.mongodb.com) for data storage v `v 5.*` or `v 6.*` only
-5. Some backend tech Bearer token `JWT`,ORM `mongoose`,
+5. Backend tech: Bearer token `JWT`, ORM `mongoose`
 6. [agora-io](https://www.agora.io) for video and voice calls
 7. All media saved on the server on your vps server
 8. Google Maps for share chat location
@@ -48,9 +53,9 @@
 10. `firebase-admin` for push notifications
 11. `geoip-lite` and `request-ip` for detect user country
 
-## FEATURES LIST (Apps)
+## Features (Apps)
 
-- This app almost whatsapp clone will all functions work like whatsapp exactly!
+- This app is a WhatsApp‑style clone with matching core features
 - No Firebase is used only used for push notification, and you can switch to OneSignal
 - Docker ready
 - Login And register by email and password
@@ -63,7 +68,7 @@
 - Unread chat for all chats and for each chat like whatsapp
 - [mute un mute notifications],[Delete],[Report] chats
 - Call history with call duration
-- reset password OTP by send mail (You need to configure it form backend .env.production)
+- Reset password OTP by email (configure backend `.env.production`)
 - Report users
 - Block Users from the app
 - All users have not deleted his account and search on them
@@ -78,7 +83,7 @@
 - In app notification mute for all chats
 - Help (contact us) and (privacy policy page)
 - Check for update
-- User privacy 
+- User privacy
 - Message upload and download progress
 - Logout for the app
 - Group chat mentions
@@ -109,7 +114,7 @@
 - Max file code length is 400 all code is clean code can be edit easily!
 - More updates will be available soon
 
-## FEATURES Admin (Apps)
+## Features (Admin)
 
 - See all users with time of join and search of them
 - See the number of users (deleted, online, etc...)
@@ -120,36 +125,36 @@
 - See all information about specific user
 - Send notification to all users who use the app!
 - Control Your chat app like allow calls or show ads and more!
-- set max limit for a group of chat and broadcast also
+- Set max limits for group and broadcast sizes
 - there are more to discover in the admin app give it try!
 - admin app is responsive you can use it even on mobile and generate apk or web for it!
 - 16 language support for admin also
 - More updates will be available soon
 
-## Why to purchase
+## Why purchase
 
 1. No Firebase high-cost price!
 2. Self-deployment server you will have full access to your database!
 3. Fast and secure with Node.js
-4. Support for android, ios,mac,windows,macOs included in the source code with same price
+4. Support for Android, iOS, macOS, Windows, and Web included
 5. Support an admin panel included in the source code with same price
 6. Support up to 16 languages and more in next updates
 7. Full customizable
-8. Clean code with SOLD principles
+8. Clean code with SOLID principles
 
-## after purchasing (codecanyou)
+## After purchasing (CodeCanyon)
 
 - You will get all files for flutter project `(android,ios,web,macos,windows)`
 - You will get the flutter `admin panel` project
 - Postman collection for all apis
-- Full nestjs code which its backend code
+- Full NestJS backend code
 - Full support for future updates
-- Free support for bug fixes only (there is paid support)
+- Free support for bug fixes (paid support also available)
 - You can use this project to modify and edit it serve your `Customers` !
 
-## VCHATSDK
+## Privacy
 
-- i have another product in codecanyou you can check it from
+- No support for adult content. Support will be revoked if detected.
 
 [![VCHATSDK](https://github.com/hatemragab/v_chat_sdk/assets/37384769/63458339-18a4-4e2a-aa3c-ad527ed48edc)](https://codecanyon.net/item/flutter-chat-app-with-node-js-and-socket-io-mongo-db/reviews/26142700)
 
@@ -158,7 +163,59 @@
 [![fram_3](https://github.com/user-attachments/assets/f620288b-2023-4d70-9ddb-8f6044f3743a)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
 
 <pre><code>
-- Update 31 Jan 2025  
+- Update 15 Oct 2025  V2.2.1 build 71
+- support new flutter version at stable, 3.35.6
+- support android 16K page size
+- introduce message emojis 
+- introduce change chat wallpaper
+- upgrade all flutter packages
+</code></pre>
+
+
+<pre><code>
+- Update 6 Aug 2025  V2.2.0 build 70
+- Update all packages for flutter side and nestjs side 
+- Support flutter sdk V3.32.8 and above node js v23.11.0
+- improve the callkit for ios for receiving calls 
+- android add real call notification style like native system and add call timer notifiaction
+- add all missing translated (localizations) words 
+- Add android foreground service for make call continue while app locked!
+- UI improvements => image crop page,theme Dark theme, call item new ui,location message,users screen and search
+- errors fixed => start message page, one seen message,image and other media download after you send it fixed now!
+- fix play voice for android
+- add call log for wide mode like web or tablet
+- new big update for media now we have media compress and media trimmer!
+- new package for location picker
+- timeout for typing indicator
+- fix delete story from you 
+- add story views option to let you know who see you story
+- improve image view page fix zoom and add more options to it
+- improve and fix some bugs for group calls like when new one join it send call request all !
+- improve the docs for Postman api collection
+- fix send notifications from firebase direct
+</code></pre>
+
+<pre><code> 
+- Update 23 May 2025
+- Introduced OTP phone verification with a new `phone_otp_version`: - Login via phone number with SMS sent by Firebase (requires enabling phone auth and billing in Firebase).
+- after download the code now you will find `email_version` and `phone_otp_version` choose which version you will go with
+- Real-time contacts sync; users can only search and chat with their own contacts for improved privacy.
+- Web login via QR code scanning for seamless access. - Full support for Flutter 3.29.3 for maximum compatibility and stability.
+- Major Improvements & Features:
+- Fixed Firebase admin push notifications if user open the app. 
+- Redesigned admin login page UI  . 
+- Upgraded all packages and dependencies, resolving deprecated APIs for long-term support and stability. 
+- Improved  login and register page UI for better usability and accessibility.
+- Added drag-and-drop file upload and keyboard copy-paste support in the web version.
+- Enhanced web version speed by upgrading the in-memory database.
+- Upgraded OneSignal package to the latest version and fixed all breaking changes.
+- Improved text input in chats for a better messaging experience.
+- Added support for changing language and theme directly from the registration page.
+- Enhanced translation coverage and accuracy throughout the app.
+</code></pre>
+
+<pre><code>
+- Update 31 Feb 2025  
 - Support native calls like whatsapp
 - improve call ui and group calls improved
 - support delete your story

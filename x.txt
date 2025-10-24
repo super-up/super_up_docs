@@ -1,1 +1,64 @@
 GIT_USER=hatemragab  docusaurus deploy
+
+
+
+
+
+<pre><code>
+- Update 23 May 2025
+ - Major Improvements & Features:
+  - Fixed Firebase administrator push notifications for more reliable and timely delivery.
+  - Redesigned admin login page UI for a modern, intuitive experience.
+  - Upgraded all packages and dependencies, resolving deprecated APIs for long-term support and stability.
+  - Improved web login page UI for better usability and accessibility.
+   - Added drag-and-drop file upload and keyboard copy-paste support in the web version.
+    - Enhanced web version speed by upgrading the in-memory database.
+- Upgraded OneSignal package to the latest version and fixed all breaking changes.
+ - Improved textile (rich text) input in chats for a better messaging experience.
+  - Added support for changing language and theme directly from the registration page.
+   - Enhanced translation coverage and accuracy throughout the app.
+    - Introduced OTP phone verification with a new `phone_otp_version`: - Login via phone number with SMS sent by Firebase (requires enabling phone auth and billing in Firebase).
+     - Real-time contacts sync; users can only search and chat with their own contacts for improved privacy.
+ - Web login via QR code scanning for seamless access. - Full support for Flutter 3.29.3 for maximum compatibility and stability.
+  - Documentation: - Updated docs to reflect new features, UI changes, and setup steps for both `email_version` and `phone_otp_version`.
+   - Added clear instructions for enabling phone authentication and billing in Firebase.
+    - General: - Multiple performance optimizations and bug fixes for a smoother, faster, and more reliable user experience.
+          </code></pre>
+
+
+
+
+
+
+fix firebase administrator push notify
+update admin login page ui
+upgrade all packages fix all deprecated for longer support improve web login page ui
+support drag files in web version and copy paste by the keyboard
+improve web version speed by upgrade the in memory db
+upgrade onesignal package to last version and fix all breakpoints
+improve textile input in chats
+support change lang and theme from register page
+improve language translate words in whole app
+introduce OTP phone verify version now after download the code you will find two version
+one for `email_version` and `phone_otp_version`
+phone_otp_version has the following features
+login by phone number sms send by firebase just send sms so you will require to enable phone auth from firebase dashboard
+and enable billing
+contacts sync now chats privacy you can only search and see your contacts only sync contacts in realtime
+web login by scan QR code for this version and more...
+support for flutter 3.29.3
+write docs by this way please
+fill this part with good text as i will explain to you this is my old docs says
+<pre><code>
+- Update 23 May 2025
+
+</code></pre>
+
+<pre><code>
+- Update 31 Feb 2025
+- Support native calls like whatsapp
+- improve call ui and group calls improved
+- support delete your story
+- upgrade flutter packages to support flutter 3.27.X
+- fix some bugs like checking on a message which been deleted
+</code></pre>

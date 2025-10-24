@@ -1,0 +1,135 @@
+<html>
+<body><h1>vchat-sdk</h1>
+<p>Vchat-sdk is a SaaS (Software as a Service) chat system that offers <code>real-time</code> messaging capabilities for
+    web and mobile applications. It consists of two parts: the server-side and the client-side. The server-side is built
+    using <code>Node.js</code> and Socket.IO for real-time communication, while MongoDB is used for data storage.</p>
+<p>A unique feature of vchat-sdk is its independence from <code>Firebase</code> for data storage. However, it does
+    provide the option to enable push notifications using Firebase Cloud Messaging <code>(FCM)</code> or
+    <code>OneSignal</code>.</p>
+<p>Create a new app or integrate with an existing production app to get started.</p> <a
+        href="https://v-chat-sdk.github.io/vchat-v2-docs/docs/intro">Full Documentation Here</a>
+<h2 id="about-v_chat_sdk">About V_CHAT_SDK</h2>
+<ul>
+    <li>V_CHAT_SDK is a package written in pure Dart and NestJS for the server-side. It helps you add chat functionality
+        to any existing or new Flutter mobile project, regardless of the back-end service you use.
+    </li>
+    <li>V_CHAT_SDK offers unlimited text, image, video, record, location, push notifications, and data control.</li>
+    <li>With only 6 public APIs, V_CHAT_SDK is an easy way to integrate advanced real-time messaging into your chat.
+    </li>
+    <li>V_CHAT_SDK uses Node.js for its backend service and Firebase for push notifications. MongoDB is used as the
+        message database, while the client-side is powered by <code>Flutter</code>.
+    </li>
+    <li> this is the flutter <a href="https://github.com/hatemragab/v_chat_sdk">Clint</a> public avalible on github you
+        need to purchasing the server side code from here
+    </li>
+</ul>
+<h2 id="about-microservices">About Microservices</h2>
+<ol>
+    <li>Reduced load on your main server, as chat traffic can be high.</li>
+    <li>Improved scalability: Microservices make it easier to identify and resolve scaling bottlenecks at a
+        per-microservice level.
+    </li>
+    <li>Easy to build and maintain: Their single-purpose design enables smaller, cross-functional teams to specialize in
+        a subset of the microservices within a solution.
+    </li>
+</ol>
+<h2 id="use-cases">Use Cases</h2>
+<ol>
+    <li>Perfect for social media apps that require a chat system similar to <code>WhatsApp</code> or
+        <code>Facebook</code>.
+    </li>
+    <li>Ideal for e-commerce apps looking to add chat features, such as delivery or marketplace communication, like
+        <code>OLX</code> or <code>Facebook Marketplace</code>.
+    </li>
+    <li>Can be used for real-time user chat <code>support</code>.</li>
+</ol>
+<h2 id="how-v_chat_sdk-works">How V_CHAT_SDK Works</h2>
+<p><code>V_CHAT_SDK</code> connects with your backend service, regardless of the language or framework it uses. It
+    communicates with your system through public APIs and runs separately, yet remains connected via these APIs.</p>
+<p>When you register a new user in your system, call the <code>V_CHAT_SDK</code> public API to create a separate
+    database for saving user information like names, images, and identifiers. Once the user is successfully connected in
+    your client app ( typically after successful authentication), you need to connect the user to the
+    <code>V_CHAT_SDK</code> system to enable communication with other users this done through using of flutter packages
+    already build. If you have an existing production app and wish to integrate <code>V_CHAT_SDK</code>, you can migrate
+    old users, as explained in the backend section.</p>
+<h2 id="technologies">Technologies</h2>
+<ol>
+    <li><a href="https://nestjs.com">Nestjs</a> is used for server-side code.</li>
+    <li><a href="https://www.mongodb.com/">MongoDB</a> stores chat texts and user data.</li>
+    <li><a href="https://socket.io">Socket.IO</a> enables real-time communication.</li>
+    <li><a href="https://firebase.google.com/docs/cloud-messaging">FCM</a> or <a
+            href="https://onesignal.com">OneSignal</a> provide push notifications. You can choose between them or enable
+        both, and V_CHAT_SDK will manage the user&#39;s platform availability.
+    </li>
+    <li>Amazon AWS <a href="https://aws.amazon.com/s3">S3</a> securely stores user media with access restrictions using
+        pre-signed URLs.
+    </li>
+    <li><a href="https://webrtc.org">WebRTC</a> is used for video and voice calls, but it&#39;s not 100% stable and
+        requires a paid <a href="https://webrtc.org/getting-started/turn-server">TURN</a> server. Support for <a
+                href="https://www.agora.io/en">Agora.io</a> will be added.
+    </li>
+    <li>Client-side SDK supports <a href="https://flutter.dev">Flutter</a> for Android, iOS, web, Windows, and Mac.</li>
+</ol>
+<h2 id="server-requirements-for-v_chat_sdk">Server Requirements for V_CHAT_SDK</h2>
+<p>V_CHAT_SDK is a lightweight SaaS chat system with minimal server resource requirements:</p>
+<ul>
+    <li>1 CPU core</li>
+    <li>1 GB RAM</li>
+    <li>Fast SSD storage</li>
+    <li>Ubuntu version 18 or higher</li>
+    <li>Recommended hosting: <a href="https://www.digitalocean.com/">DigitalOcean</a></li>
+    <li>Domain name: recommended provider is <a href="https://www.namecheap.com">NameCheap</a></li>
+</ul>
+<p>Additionally, you need a MongoDB database for data storage. You can host a free MongoDB database on MongoDB Atlas, a
+    cloud-based database service offering simple and secure data management.</p>
+<p>With these minimum server requirements, you can easily set up V_CHAT_SDK and start enabling real-time messaging in
+    your web or mobile applications.</p>
+<h2 id="features">Features</h2>
+<p>vchat-sdk supports the following features:</p>
+<p>V_CHAT_SDK supports a wide range of features, including:</p> <img
+        src="https://user-images.githubusercontent.com/37384769/236642216-c80db0f7-925b-4d13-b5af-85db96fac7ef.png">
+<p>With vchat-sdk, you can easily integrate real-time messaging into your applications without the need to build your
+    own chat system from scratch.</p>
+<h2 id="information">Information</h2>
+<ol>
+    <li>V_CHAT_SDK is not a full app, but a set of APIs designed to make chat development faster and easier. If you&#39;re
+        looking for a full app, consider <strong><a href="https://github.com/hatemragab/superup">SuperUp</a></strong>.
+    </li>
+    <li>While there&#39;s no prebuilt admin panel UI, V_CHAT_SDK provides prebuilt Postman APIs for integrating the chat
+        panel into your system. See the <a href="./backend/apis.md">admin_apis</a> section.
+    </li>
+    <li>You can view all APIs before purchasing the source code: see the <a
+            href="https://documenter.getpostman.com/view/24524392/2s93Jox6Dq">PostmanCollection</a>.
+    </li>
+    <li>To see an example of the current features, check out the open-source client app that uses V_CHAT_SDK: <strong><a
+            href="https://github.com/hatemragab/superup">SuperUp</a></strong>.
+    </li>
+    <li>For a web version, you can use Flutter web, as all packages support Flutter web. To integrate with other
+        projects like React or Angular, you can build your components using the <a
+                href="https://documenter.getpostman.com/view/24524392/2s93Jox6Dq">PostmanCollection</a>, read the docs
+        for API params, and follow the <a href="./backend/socket_io_apis.md">socket.io</a> events.
+    </li>
+    <li>Purchasing this project from <code>codecanyou</code> allows for one-time use per project. For multi-project
+        usage, contact <code>hatemragapdev@gmail.com</code>.
+    </li>
+</ol>
+<h2 id="Pear">purchase order</h2>
+<ul>
+    <li>You will get the full nestjs code</li>
+    <li>Support for package bugs for ever</li>
+    <li>access the next package updates</li>
+    <li>current we not support Extended License</li>
+    <li>Free for personal use</li>
+    <li>For commercial use you need to contact me you only have license to use this server side for one commercial app
+    </li>
+</ul>
+<h2 id="contact">Contact</h2>
+<ul>
+    <li>You can reach out via email at <code>hatemragapdev@gmail.com</code> or on Skype at <code>live:.cid.607250433850e3a6</code>.
+    </li>
+    <li>For server deployment assistance and more information, <a
+            href="https://v-chat-sdk.github.io/vchat-v2-docs/docs/backend/intro#need-more-support">visit</a>.
+    </li>
+</ul>
+</body>
+</html>

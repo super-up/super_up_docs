@@ -8,85 +8,76 @@ sidebar_position: 3
 
 ### Requirements
 
-1. Person who has experience to deal with ubuntu server and deploy otherwise you can contact [me](mailto:hatemragapdev@gmail.com) iam offer best upload experience
-2. Install Node.js (version `v16.x` or to `19.x`) and npm. Check the Node.js version using `node -v`.
-3. Install only if you not `docker user` cross-env `npm i -g cross-env` for managing production or development
-   environments and pm2 for manage production deploy by `npm i -g pm2`
-   CLI (`npm install -g @nestjs/cli`).
+1. Experience with Ubuntu server deployment is recommended (or contact [me](mailto:hatemragapdev@gmail.com)).
+2. Install Node.js (current recommended: `v23.x`) and npm. Check with `node -v`.
+3. If not using Docker: install `pm2` (`npm i -g pm2`) and `@nestjs/cli` (`npm i -g @nestjs/cli`).
 
-4. Install [MongoDB](https://www.mongodb.com/try/download/community-kubernetes-operator) (minimum `v4.4`,
-   recommended `v6`).
+4. Install [MongoDB](https://www.mongodb.com/try/download/community) (minimum `v5`, recommended `v6`).
 
 ### .env file
 
 ```
-# you can out local url or docker url or url of mongo in another service
-DB_URL="YOUR_MONGO_URL"
+# Mongo connection (local, Docker, or remote)
+DB_URL="mongodb://127.0.0.1:27017/super_up"
 
-# Dont update it ever after you set it! if you do all users will logout!!!
-JWT_SECRET="STRONG_PASSWORD"
+# Security (do not change after launch)
+JWT_SECRET="CHANGE-ME-STRONG"
+issuer="you@example.com"
+audience="you@example.com"
 
-# Dont update it ever after you set it! if you do all users will logout!!!
-issuer="your gmail"
-# Dont update it ever after you set it! if you do all users will logout!!!
-audience="your gmail"
+# Runtime
+NODE_ENV="production"
+EDIT_MODE="false"
+ignoreEnvFile="false"  # set true if injecting via OS env
+PORT=3000
 
-NODE_ENV="production" # dont update it
-EDIT_MODE ="false" # set to false
-ignoreEnvFile="false"  # set to true if you will inject the env values from system os
-PORT=80 //exposed port of node js
+# Admin panel passwords
+ControlPanelAdminPassword="CHANGE-ME-ADMIN"
+ControlPanelAdminPasswordViewer="CHANGE-ME-VIEWER"
 
-#Admin panel passwords be carfaul
-ControlPanelAdminPassword= "xxxxxxxxxxxxx" # put strong password for admin who can edit and update any thing in the app
-ControlPanelAdminPasswordViewer= "xxxxxxxxxx-xxxx" # put strong password for admin that can only read(see ,users data,chats data etc...) he cannot update any thing
+# Push providers
+isOneSignalEnabled="false"
+isFirebaseFcmEnabled="false"
+oneSignalAppId=""
+oneSignalApiKey=""
 
-isOneSignalEnabled ="false" # set to true if you can provide oneSignalAppId and oneSignalApiKey to enable push by onesignal
-isFirebaseFcmEnabled ="false" # set to true if you provide the firebase admin.json file
+# Email (OTP)
+EMAIL_HOST=""
+EMAIL_USER=""
+EMAIL_PASSWORD=""
 
-#set onesignal data if you support it by set isOneSignalEnabled to true
-oneSignalAppId="xxxxxxxxx-xxxxx-xxxxx-xxxx-xxxxxxxxx"
-#set onesignal data if you support it by set isOneSignalEnabled to true
-oneSignalApiKey="xxxxxxxxx"
-
-# SET THE Email data to let use use forget password OTP
-EMAIL_HOST="EMAIL HOST FROM THE PROVIDER COMPANY"
-EMAIL_USER="YOUR EMAIL USER"
-EMAIL_PASSWORD="EMAIL USER PASSWORD"
-
-# SET AGORA API KEYS
+# Agora (calls)
 AGORA_APP_ID=""
-# Get this from agora app console `Primary Certificate` value
 AGORA_APP_CERTIFICATE=""
 ```
 
-### privacy-policy
+### Privacy policy
 
-- You can update your privacy privacy page in the source code inside
-- `http://localhost:3000/privacy-policy.html` this will be the `privacy-policy` of your app
-- You can edit it inside `public/privacy-policy.html`
-- You can edit the home inside `public/home.html` you can access it `http://localhost:3000`
+- Update the privacy policy HTML at `public/privacy-policy.html` (served at `/privacy-policy.html`).
+- Update the landing HTML at `public/home.html` (served at `/`).
 
-### firebase admin file
+### Firebase admin file
 
-1. Make sure the firebase account is the same as the one used in flutter app.
+1. Make sure the Firebase project matches the Flutter app configuration.
 2. To ensure chat notifications work properly, follow [this video](https://www.youtube.com/watch?v=cXOzbKDXTh0) to
    obtain the `firebase.adminsdk.json` file.
-3. Replace the existing `firebase.adminsdk.json` file with your new one.
+3. Replace the existing `firebase.adminsdk.json` in backend with your new one.
 
-
-
-### Setting Up Agora for Your Application
+### Setting up Agora (calls)
 
 This guide will walk you through setting up Agora for your application, retrieving the necessary keys, and ensuring proper configuration to enable live calls.
 
 ---
 
 - Step 1: Create and Configure Your Agora Project
+
 1. **Log in to the Agora Console**
+
    - Navigate to the [Agora Console](https://console.agora.io/).
    - Log in or create a new account if you don’t have one.
 
 2. **Create a New Project**
+
    - Go to the **Projects** section.
    - Click **Create** to add a new project.
    - Provide a name for your project and ensure you select the **Live** mode to enable live broadcasting features.
@@ -99,10 +90,13 @@ This guide will walk you through setting up Agora for your application, retrievi
 ---
 
 - Step 2: Retrieve Your Agora Keys
+
 1. **Locate Your Project Keys**
+
    - In the Agora Console, navigate to the **Project Details** section of your newly created project.
 
 2. **Get the `AGORA_APP_ID`**
+
    - Copy the `App ID` value. This is your unique project identifier.
 
 3. **Get the `AGORA_APP_CERTIFICATE`**
@@ -115,9 +109,11 @@ Ensure you handle the `Primary Certificate` securely and never expose it publicl
 ---
 
 - Step 3: Update Your `.env` File
+
 1. Open the `.env` file in your project’s root directory.
 
 2. Add or update the following keys with the values you retrieved from the Agora Console:
+
    ```env
    AGORA_APP_ID=your_agora_app_id_here
    AGORA_APP_CERTIFICATE=your_agora_certificate_here
@@ -131,8 +127,7 @@ Ensure you handle the `Primary Certificate` securely and never expose it publicl
   If you are using Flutter for the frontend,
   inside the flutter `s_constants` file the value of `agoraAppId`
 
-
-### Obtaining OneSignal Keys
+### Obtaining OneSignal keys
 
 1. Create a Firebase account and follow [this video](https://www.youtube.com/watch?v=FOkgfsTwvC4) to obtain OneSignal
    keys.
@@ -143,25 +138,22 @@ Ensure you handle the `Primary Certificate` securely and never expose it publicl
    oneSignalApiKey="xxxxxxxxxxxx"
    ```
 
-### Running the Code (Without Docker)
+### Running the code (without Docker)
 
 - You should be familiar with ubuntu server setup
 
-1. Install ubuntu server v 20.* and later
+1. Install Ubuntu Server 22.04+ or 24.04
 2. Open a terminal in the `backend` root folder.
-3. Run `npm i` or `npm i --force` if issues occur.
+3. Run `npm ci` (or `npm i --force` if needed).
 4. Generate a `dist` folder `npm run build`.
-5. Run `npm run start:prod`for live console logs for just make sure your server is configure well
-6. if you run in production mode. in your vps server then you should
-7. then stop and run this run `pm2 start ecosystem.config.js --only normal --env production`.for background serve
-8. to see logs run `pm2 logs`
-9. If you see `app run in production,` your code is production-ready.
-10. Access the development server at `localhost:80` and production server at port `80` Update the port
-    in `.env.production` if necessary.
-11. Update the `PORT` in the `.env` file if using Docker, and ensure you update the environment variable in the OS (env).
-12. you need to install `nginx` and connect domain to your server for security and more speed!
-13. dont forget to add the websocket support for nginx while you configure it
-14. inside the location of your server block don't forget to add this to enable websocket support
+5. Run `npm run start:prod` to verify logs locally.
+6. For background serving in production, use PM2:
+   `pm2 start ecosystem.config.js --only normal --env production` and view logs via `pm2 logs`.
+7. If you see `app run in production,` your code is production-ready.
+8. Expose port via Nginx reverse proxy. See [Deployment](./deployment.md) for Nginx config with WebSocket support.
+9. If using Docker, ensure `PORT` and env are injected properly.
+10. For Nginx, include WebSocket headers in your server block:
+
 ```
  proxy_set_header Upgrade $http_upgrade;
  proxy_set_header Connection "upgrade";
@@ -177,52 +169,46 @@ Ensure you handle the `Primary Certificate` securely and never expose it publicl
 1. run the flutter code to build the web version inside the `super_up_app` folder
 2. run this code `flutter build web --web-renderer html`
 3. now you can find the html folder inside the build folder you need to upload it to your server
-4. your server can your vps server you can use nginx to deploy your web code and admin code
+4. Host the output on your VPS via Nginx. See [Deployment](./deployment.md).
 
 ### Deploy admin
 
 1. run the flutter code to build the web version inside the `super_up_admin` folder
 2. run this code `flutter build web --web-renderer html`
 3. now you can find the html folder inside the build folder you need to upload it to your server
-4. your server can your vps server you can use nginx to deploy your web code and admin code
+4. Host the output on your VPS via Nginx. See [Deployment](./deployment.md).
 
-### Running the Code (With Docker)
+### Running the code (with Docker)
 
 1. Install [Docker](https://www.docker.com) and Docker Compose.
-2. update `.env.production` this keys `DB_URL=` from `mongodb://127.0.0.1:27017/super_up`
-   to `DB_URL=mongodb://myuser_xxx:mypassword_xxx@mongo:27017/super_up?authSource=admin`
-3. Run the `Dockerfile` if Docker is already installed on your system. Note that this only sets up v_chat_sdk and
+2. Update `.env.production` `DB_URL` to `mongodb://myuser_xxx:mypassword_xxx@mongo:27017/super_up?authSource=admin` for compose.
+3. Build the backend Dockerfile. Note: it only builds the backend service; MongoDB runs as a separate container, managed by compose.
    doesn't include MongoDB or Redis. You need to manage these separately OR.
 4. Use a `compose file` witch manage all dependency together.
 5. Run `docker-compose up` to start the containers and view logs, or run `docker-compose up -d` to run in the
    background.
 
-### Running the Code (With Pm2)
+### Running the code (with PM2)
+
 - [pm2](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page) is a popular framework for run the nodejs applications in background with high performance
 - You need first to install it by `npm install pm2@latest -g`
 - You run the app is already ready to run with pm2 by run `npm run pm2`
 - To see the logs in real time you can run `pm2 logs`
 
 ### AuthKey.p8
+
 - This key is required to make calls for ios VOIP ring you need to get it from [apple](./flutter.md#notifications-ios-apns-and-voip)
 
-
-### Common Errors
+### Common errors
 
 1. If you encounter the error `ERROR [ExceptionHandler] Configuration key "JWT_SECRET" does not exist`, it means NestJS
    cannot read your `.env.production` file.
 
-    - To fix this, ensure you have injected the environment variable or that `.env.production` exists in the root of the
-      project. It may be ignored by .git.
+   - To fix this, ensure you have injected the environment variable or that `.env.production` exists in the root of the
+     project. It may be ignored by .git.
 
-2. If you see the
-   error `The default Firebase app does not exist. Make sure you call initializeApp() before using any of the Firebase services`
-   ,it means you have enabled FCM but have not [configured](https://www.youtube.com/watch?v=cXOzbKDXTh0) it.
+2. Error `The default Firebase app does not exist...`: you enabled FCM but did not configure admin or Flutter side properly. Follow the linked video.
 
 :::tip Contact me
-Iam offer paid full server side setup See [Plans](support.md)
+I offer paid full server-side setup. See [Plans](support.md)
 :::
-
-
-
-

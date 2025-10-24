@@ -1,75 +1,59 @@
 ---
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # Community FAQ
 
 ### How Users Register
 
-- Users can register only by their `Email` and `password`
-- Data collected from user while register is `Device Data` User location from his ip
-- `Email` `Password` `Name` is required while user registers `bio`,`image` is Optional
-- Users can Reset their password by sending Email OTP
-- Data collected from user while register is `Device Data` User location from his ip
-- `Email` `Password` `Name` is required while user registers `bio`,`image` is Optional
-- Users can Reset their password by sending Email OTP
+- Users register with `email` and `password`.
+- Required fields: `email`, `password`, `name`. Optional: `bio`, `image`.
+- We collect device metadata and approximate location from IP for security/anti‑abuse.
+- Password reset is via email OTP.
 
-### Ios Run Bug
+### iOS run bug
 
 If you face this
-```error building IOS. What should I do if I have the following problem? [Failed to install the app on the device.Domain: The parent bundle has the same identifier]```
+`error building IOS. What should I do if I have the following problem? [Failed to install the app on the device.Domain: The parent bundle has the same identifier]`
 
-- this comes from the ShareExtension in xcode select it under the target and Runner update the ShareExtension bundle id
-  it should be the same as your bundle id and attach to it .ShareExtension and it will works
-- For more info, check out this [page](https://github.com/ShoutSocial/share_handler)
+- This comes from the ShareExtension. In Xcode, select `ShareExtension` target and update its bundle id to match your
+  main bundle id with `.ShareExtension` suffix.
+- For more info, check: [share_handler](https://github.com/ShoutSocial/share_handler)
   ![image](https://github.com/hatemragab/v_chat_sdk/assets/37384769/c5e3b179-1b5f-4ee1-bd57-d8a1d431ec95)
 
 ### New features
 
-- I have built this app to be suitable for most of all users as I can
-- So sure there are some features you will need it for your business this
-- See more details about your custom features
+- The app targets broad use cases. If you need custom features for your business, see Support for tailored work.
 
 ### Stop ads
 
-- just update this values like this or you can stop it from the admin panel
+- Update ad settings from the admin panel, or set the flags in config as shown below.
   ![image](./img/ads.jpeg)
 
-### Phone Login
+### Phone login
 
-- As this is whatsapp clone but i use the Email and password for login because
-- I see this will be `suitable` for all users since I dont need to depends on firebase for `Auth`!
+- The app ships with email/password auth to avoid vendor lock‑in. Phone OTP login is available in versions that support it.
 
-### Why not to use webRTC for calls
+### Why not WebRTC for calls
 
-- I have already tried to add webRTC and already works, but I found the following
-- it needs a very expensive VPS server and needs to make it scalable and distribute it as CDN for each country
-- To get the most good video and voice quality, and it needs a lot of configurations since there
-- Are pre-configured service like agora.io with a good price, and it has 1K minutes free for each month
-- And it is more stable and scalable with a high quality, So I switch to it!
+- WebRTC requires expensive TURN/SFU infra and global distribution to maintain quality. Agora.io provides reliable, scalable calls with a free quota and lower operational overhead, so it’s used instead.
 
 ### Call notifications
 
-- Currently the app calls works by send notifications like a chat notification
-- it says there are some one want to call with you not pop up in full screen like whatsapp
-- iam working on update and improve this function
+- Currently call notifications arrive like chat notifications. Full‑screen native call UI is being improved in upcoming updates.
 
 ### Admin panel
 
-- Admin panel in the first version it need more work in next updates sure i will add more user management stay tuned!
+- Admin panel will keep receiving user management improvements in updates.
 
-### Desktop Voice recorder
+### Desktop voice recorder
 
-- Since there is no flutter package support Desktop voice reorder i have disabled it for now next updates i will make it
-  works
+- Desktop voice recording is disabled due to package limitations; will be revisited in future updates.
 
-### Bug while releasing android (Your project requires a newer version of kotlin)
+### Bug while releasing Android (Your project requires a newer version of Kotlin)
 
-- `Fixed in last release`
-- This bug isn't related to the kotlin (^_^)
-- You need to configure the android for release generate
-- In the android folder create `key.properties` and fill it out with the data of your `jks` key
-- Create your `jks`
+- Fixed in recent releases. Configure Android release signing properly.
+- Create `key.properties` with your keystore info:
 
 ```
 storePassword=your storePassword
@@ -78,9 +62,7 @@ keyAlias=your keyAlias
 storeFile=/Users/hatemragap/super-up-keystore.jks
 ```
 
-- if you dont use the `jks` and not publish to google play you can simply do the following
-- open `android/app/build.gradle`
-- Replace the  [following](https://docs.flutter.dev/deployment/android#create-an-upload-keystore)
+- If you are not publishing to Play right now, you can temporarily sign with debug keys. In `android/app/build.gradle`, replace release signing section per Flutter docs with:
 
 ```
     signingConfigs {
@@ -112,25 +94,18 @@ to Delete the `signingConfigs{}`
 
 ### Flutter state management
 
-- i dont use any state management solutions available
-- instead of that i have created my own solution on top of flutter `valueNotifier` and `streams`
+- Custom state management based on `ValueNotifier` and streams is used across the app.
 
-### Plan Support requirements
+### Plan support requirements
 
-1. Firebase account or create app and invite me as owner to it you can remove me after install `hatemragapdev@gmail.com`
-2. VPS cpu with AVX support 2 cpu and 2 ram or more with 100GB ssd storage
-3. Domain name pointed to the vps with wild
-   card * [See for more info](https://caprover.com/docs/get-started.html#step-2-connect-root-domain) you can host at
-   namecheap i will configure the ssl with lets encrypted
+1. Firebase project (invite `hatemragapdev@gmail.com` temporarily for setup)
+2. VPS with AVX support (2 vCPU, 2 GB RAM min, 100 GB SSD recommended)
+3. Domain name pointed to the VPS (wildcard optional). SSL will be configured (Let’s Encrypt).
 4. Agora.io account with 10$ billing (optional) can be done later
 5. Google Maps api key with place search enabled; it will require enable billing (optional) can be done later
-6. Google Ads banner ids for android and ios if you will enable it
-7. App name app logo email for support
-8. To support forget password email reset code send via mail you need to get a SMTP server need the data `EMAIL_HOST`
-   `EMAIL_USER`  `EMAIL_PASSWORD`
-9. Iam use this service for upload the backend code [Caprover](https://caprover.com/)
-10. if you want me to upload the app by myself add me to Google Play console and apple also with same email
-    `hatemragapdev@gmail.com`
-11. App name app logo email for support
-12. The support is only available for one product each product you deploy will require to pay its fees of upload one of
-    the plans above
+6. Google Ads banner IDs for Android and iOS (optional)
+7. App name, logo, and support email
+8. SMTP credentials for password reset (EMAIL_HOST, EMAIL_USER, EMAIL_PASSWORD)
+9. Backend can be deployed with CapRover or standard VPS (see Deployment doc)
+10. If publishing, add `hatemragapdev@gmail.com` to Play/App Store as needed during setup
+11. Support applies to one product per purchase; additional products require separate plans

@@ -57,6 +57,69 @@ melos bs
 - then run the code in the super_up_app `flutter pub run flutter_launcher_icons:main`
 - then this command `dart run flutter_native_splash:create`
 
+### Full environment setup (Android/iOS/Web/macOS/Windows)
+
+#### Prerequisites
+
+- Flutter SDK 3.29+ (or as stated in `intro.md`) with `flutter doctor` all green
+- Android Studio with Android SDK platforms 34+, NDK, and platform tools
+- Xcode (for iOS/macOS) with command-line tools, CocoaPods `sudo gem install cocoapods`
+- Java 17 (recommended; set `JAVA_HOME`)
+- Melos installed and bootstrapped as above
+
+#### Android setup
+
+1. Create signing key (for Play release):
+
+```bash
+keytool -genkey -v -keystore ~/superup.keystore -alias superup -keyalg RSA -keysize 2048 -validity 10000
+```
+
+2. Place keystore at `apps/super_up_app/android/app/superup.keystore`.
+
+3. Create `apps/super_up_app/android/key.properties`:
+
+```properties
+storePassword=CHANGE_ME
+keyPassword=CHANGE_ME
+keyAlias=superup
+storeFile=superup.keystore
+```
+
+4. Build:
+
+```bash
+flutter build apk --split-per-abi
+flutter build appbundle
+```
+
+#### iOS setup
+
+- Update bundle identifier via the `rename` tool as described
+- Open `ios/Runner.xcworkspace` in Xcode, set signing team, automatic signing
+- Update `Info.plist` for AdMob Google Ads App ID and any permissions (camera, mic, location)
+- Build:
+
+```bash
+flutter build ipa --export-options-plist=ExportOptions.plist
+```
+
+#### Web setup
+
+- For best compatibility use HTML renderer:
+
+```bash
+flutter build web --release --web-renderer html
+```
+
+#### macOS/Windows
+
+```bash
+flutter config --enable-macos-desktop --enable-windows-desktop
+flutter build macos
+flutter build windows
+```
+
 ### Connect firebase
 
 - Recommend to user firebase flutter CLI which its new tool to make the firebase base connect straightforward
@@ -64,6 +127,13 @@ melos bs
 - [ios](https://firebase.google.com/docs/flutter/setup?platform=ios)
 - You can connect it easily be firebase follow up this [video](https://www.youtube.com/watch?v=G-mbqiE87Lw)
 - CLI [tool](https://firebase.google.com/docs/flutter/setup?platform=ios#install-cli-tools)
+
+#### Firebase configuration details
+
+- Android: ensure `google-services.json` in `android/app/`
+- iOS: ensure `GoogleService-Info.plist` in `ios/Runner/`
+- Add Firebase Messaging to receive pushes; on iOS enable Push + Background Modes
+- If using APNs key, complete steps in Notifications section below
 
 ### SConstants
 
@@ -112,6 +182,12 @@ abstract class SConstants {
 }
 ```
 
+#### CORS/Domain considerations
+
+- Set `_productionBaseUrl` to your apex domain, e.g., `example.com`
+- Backend must be available on `https://api.example.com`
+- If testing via IP/port, temporarily set `baseMediaUrl` and `sApiBaseUrl` to `http://IP:PORT/` and `http://IP:PORT/api/v1`
+
 ### Add more language
 
 - You can add new language by just open the [s_translation] package
@@ -124,12 +200,12 @@ abstract class SConstants {
 
 - get the ids from these urls get banner id for ios and android
 - android and ios admob
-  ids [quick-start](https://developers.google.com/admob/flutter/quick-start)  [mobile-ads-sdk](https://developers.google.com/ad-manager/mobile-ads-sdk/flutter/quick-start)
+  ids [quick-start](https://developers.google.com/admob/flutter/quick-start) [mobile-ads-sdk](https://developers.google.com/ad-manager/mobile-ads-sdk/flutter/quick-start)
 - dont forget to update the android add the ads app Id `android/app/src/main/AndroidManifest.xml`
 - and for ios open `ios/Runder/info.plist` update the
-    ```
+  ```
   		<key>GADApplicationIdentifier</key>
-		<string>Your app id</string>
+  	<string>Your app id</string>
   ```
 - `APPLICATION_ID` not unit id be `careful`
 
@@ -200,17 +276,23 @@ abstract class SConstants {
 - Paste the Team ID
 - Click upload to register it.
   ![](img/xcode6.png)
--  **VOIP** ios setup This key you have downloaded you need to put the content of it to the backend code at the file `AuthKey.p8` it contains `XXXX` just replace all content with the new one you have
+- **VOIP** ios setup This key you have downloaded you need to put the content of it to the backend code at the file `AuthKey.p8` it contains `XXXX` just replace all content with the new one you have
 - All done now with ios `notifications`
+
+#### iOS Background modes & capabilities
+
+- Enable: Background fetch, Remote notifications, Audio/VoIP if using calls
+- Add `Push Notifications` capability
+- For VoIP, ensure backend token generation and incoming push payloads are correct
 
 ### how to update theme
 
-- For `dark` theme use it already inside the `main.dart` just update it  `dont delete it!`
+- For `dark` theme use it already inside the `main.dart` just update it `dont delete it!`
 - Of course you can update the theme direct from the code if you have much experience
 
 #### First message page
 
-``` 
+```
 darkTheme: ThemeData(
           extensions: [
             VMessageTheme.dark().copyWith(
@@ -236,12 +318,12 @@ darkTheme: ThemeData(
 
 - for `dark` theme use
 
-``` 
+```
 darkTheme: ThemeData(
           extensions: [
             VRoomTheme.light().copyWith(
               ///see  options!
-   
+
               ),
           ],
         ),
@@ -254,7 +336,7 @@ darkTheme: ThemeData(
             extensions: [
             VRoomTheme.light().copyWith(
               ///see options!
-     
+
               ),
             ],
           ),
@@ -266,7 +348,7 @@ darkTheme: ThemeData(
 - then in `apps/super_up_app/lib/v_chat_v2/v_chat_config.dart` enable OneSignal push by add this `constructor`
 - don't forget to update the app id in `SConstants.oneSignalAppId`
 
-``` 
+```
       vPush: VPush(
         enableVForegroundNotification: true,
         vPushConfig: const VLocalNotificationPushConfig(),
@@ -292,11 +374,9 @@ for notifications push which its 100% free service with no limits!
 4. admin can do anything viewer can only see the data he cant edit it
 5. you can set the password for admin and viewer from the `.env.production` file in the backend files this file is
    hidden
-   `
-   #Admin panel passwords be carfaul
-   ControlPanelAdminPassword= "xxxxxxxxxxxxx" # put strong password for admin who can edit and update any thing in the app
-   ControlPanelAdminPasswordViewer= "xxxxxxxxxx-xxxx" # put strong password for admin that can only read(see ,users data,chats data etc...) he cannot update any thing
-   `
+   `#Admin panel passwords be carfaul
+ControlPanelAdminPassword= "xxxxxxxxxxxxx" # put strong password for admin who can edit and update any thing in the app
+ControlPanelAdminPasswordViewer= "xxxxxxxxxx-xxxx" # put strong password for admin that can only read(see ,users data,chats data etc...) he cannot update any thing`
 6. You can change it any tine you want to re deploy your app!
 
 ### publish
@@ -308,7 +388,15 @@ for notifications push which its 100% free service with no limits!
 2. for web, you can run `flutter build web --web-renderer html` see backend section for how to upload
 3. for ios, you can run [ios](https://docs.flutter.dev/deployment/ios)
 
+#### Store readiness checklist
+
+- Unique app name and bundle identifiers (Android package, iOS bundle id)
+- App icons and splash (launcher icons, native splash)
+- Privacy policy hosted at `https://api.<domain>/privacy-policy.html`
+- Working push notifications (keys configured)
+- Release signing (keystore and Apple certificates/profiles)
+- Versioning and changelog
+
 :::danger
 Doesn't update any package version unless you know what to do
 :::
-
