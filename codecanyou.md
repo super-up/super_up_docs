@@ -2,12 +2,36 @@
 
 ---
 
+> ⚠️ **IMPORTANT NOTICE & DISCLAIMER**
+>
+> This software template is strictly intended for lawful and appropriate use only. The following terms apply to all
+> purchasers and users:
+>
+> 1. **Prohibited Content**: This template does not support, endorse, or permit the use of video calling features or any
+     other functionality for adult, nude, explicit, or otherwise inappropriate content.
+>
+> 2. **No Liability**: The developer assumes no responsibility or liability for any misuse of this software. Users who
+     deploy this template for prohibited purposes do so entirely at their own risk and bear full legal responsibility
+     for their actions.
+>
+> 3. **Support Restrictions**: Technical support, code assistance, bug fixes, and implementation guidance will be
+     permanently revoked and denied to any user found to be utilizing this template for adult or explicit content
+     purposes.
+>
+> 4. **Compliance Requirement**: By purchasing or using this template, you agree to comply with all applicable laws,
+     platform policies (including Apple App Store and Google Play Store guidelines), and community standards.
+>
+> **Violation of these terms will result in immediate termination of support services without refund.**
+
+---
+
 - Welcome to **Super Up**, the most complete chat app in Flutter!
 - Super Up: Cupertino‑styled full WhatsApp clone. Socket.io + MongoDB + Flutter.
 - In this app we will see the following features
 - First, you can check out our online documentation
 
-- Note: Apple may reject duplicate templates frequently submitted. Consider adding more features/branding before submission. Existing apps can submit as an update.
+- Note: Apple may reject duplicate templates frequently submitted. Consider adding more features/branding before
+  submission. Existing apps can submit as an update.
   ![updates](https://github.com/user-attachments/assets/3be6793c-05f0-4c7a-9ed9-c403a88b7e1e)
 
 [![docs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d60ae209-ec42-4e47-ad12-44b901daf883)](https://super-up.github.io/super_up_docs/docs/intro)
