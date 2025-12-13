@@ -32,19 +32,27 @@ If you face this
 
 ### Phone login
 
-- The app ships with email/password auth to avoid vendor lock‑in. Phone OTP login is available in versions that support it.
+- The app ships with email/password auth to avoid vendor lock‑in. Phone OTP login is available in versions that support
+  it.
 
 ### Why not WebRTC for calls
 
-- WebRTC requires expensive TURN/SFU infra and global distribution to maintain quality. Agora.io provides reliable, scalable calls with a free quota and lower operational overhead, so it’s used instead.
+- WebRTC requires expensive TURN/SFU infra and global distribution to maintain quality. Agora.io provides reliable,
+  scalable calls with a free quota and lower operational overhead, so it’s used instead.
 
 ### Call notifications
 
-- Currently call notifications arrive like chat notifications. Full‑screen native call UI is being improved in upcoming updates.
+- Currently call notifications arrive like chat notifications. Full‑screen native call UI is being improved in upcoming
+  updates.
 
 ### Admin panel
 
 - Admin panel will keep receiving user management improvements in updates.
+
+### Report bugs or request features
+
+- You can submit any bug reports or improvement suggestions for the next version of the app
+  at [GitHub Issues](https://github.com/super-up/bugs-improvements/issues). We will follow up with you there.
 
 ### Desktop voice recorder
 
@@ -62,7 +70,8 @@ keyAlias=your keyAlias
 storeFile=/Users/hatemragap/super-up-keystore.jks
 ```
 
-- If you are not publishing to Play right now, you can temporarily sign with debug keys. In `android/app/build.gradle`, replace release signing section per Flutter docs with:
+- If you are not publishing to Play right now, you can temporarily sign with debug keys. In `android/app/build.gradle`,
+  replace release signing section per Flutter docs with:
 
 ```
     signingConfigs {
