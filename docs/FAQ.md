@@ -30,10 +30,36 @@ If you face this
 - Update ad settings from the admin panel, or set the flags in config as shown below.
   ![image](./img/ads.jpeg)
 
-### Phone login
+### Is there a Phone OTP version of the app?
 
-- The app ships with email/password auth to avoid vendor lock‑in. Phone OTP login is available in versions that support
-  it.
+Yes! SuperUp is available in **two authentication variants**:
+
+| Version               | Location                     | Auth Method          |
+|-----------------------|------------------------------|----------------------|
+| **Email Version**     | `apps/super_up_app`          | Email + Password     |
+| **Phone OTP Version** | `apps/super_up_app_firebase` | Phone + Firebase OTP |
+
+**Email Version** (Default):
+
+- Users register with email and password
+- Email verification and password reset supported
+- No Firebase dependency for authentication
+- Best for avoiding vendor lock-in
+
+**Phone OTP Version** (Firebase):
+
+- Users register with phone number only
+- OTP sent via Firebase Authentication SMS
+- Requires Firebase project with Phone Auth enabled
+- Configure `google-services.json` (Android) and `GoogleService-Info.plist` (iOS)
+- Best for markets where phone-based auth is preferred
+
+To build the Phone OTP version: see inside the source code you downloaded from codecanyou
+
+```bash
+cd super_up_app_otp
+flutter build apk --release
+```
 
 ### Why not WebRTC for calls
 

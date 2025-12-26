@@ -22,14 +22,14 @@ melos bs
 - this code will run pub get for you in all packages
   ![](img/flutter_project_strc.png)
 - we have the following
-- apps (`super_up_admin`) this is the admin panel
+- admin (`super_dashboard`) this is the admin panel build by react.js
 - apps (`super_up_app`) this app you should run it
 - packages all needed packages the most important packages is the `super_up_core` the `s_constants.dart` in
   the `lib/src`
 
 ### Lest explain packages
 
-1. `s_translate` contains all arb files for `super_up_app`,`super_up_admin` projects
+1. `s_translate` contains all arb files for `super_up_app`,`super_dashboard` projects
 2. `super_up_core` contains all logic for super up app itself like shared http requests,utils,widgets (DONT UPDATE)
 3. `v_chat_firebase` contains the firebase FCM only logic (DONT UPDATE)
 4. `v_chat_input_ui` this contains the ui and logic for the message input (recorder,file selector,location picker)
@@ -61,10 +61,9 @@ melos bs
 
 #### Prerequisites
 
-- Flutter SDK 3.29+ (or as stated in `intro.md`) with `flutter doctor` all green
+- Flutter SDK 3.38.x+ (or as stated in `intro.md`) with `flutter doctor` all green
 - Android Studio with Android SDK platforms 34+, NDK, and platform tools
 - Xcode (for iOS/macOS) with command-line tools, CocoaPods `sudo gem install cocoapods`
-- Java 17 (recommended; set `JAVA_HOME`)
 - Melos installed and bootstrapped as above
 
 #### Android setup
@@ -186,7 +185,8 @@ abstract class SConstants {
 
 - Set `_productionBaseUrl` to your apex domain, e.g., `example.com`
 - Backend must be available on `https://api.example.com`
-- If testing via IP/port, temporarily set `baseMediaUrl` and `sApiBaseUrl` to `http://IP:PORT/` and `http://IP:PORT/api/v1`
+- If testing via IP/port, temporarily set `baseMediaUrl` and `sApiBaseUrl` to `http://IP:PORT/` and
+  `http://IP:PORT/api/v1`
 
 ### Add more language
 
@@ -276,7 +276,8 @@ abstract class SConstants {
 - Paste the Team ID
 - Click upload to register it.
   ![](img/xcode6.png)
-- **VOIP** ios setup This key you have downloaded you need to put the content of it to the backend code at the file `AuthKey.p8` it contains `XXXX` just replace all content with the new one you have
+- **VOIP** ios setup This key you have downloaded you need to put the content of it to the backend code at the file
+  `AuthKey.p8` it contains `XXXX` just replace all content with the new one you have
 - All done now with ios `notifications`
 
 #### iOS Background modes & capabilities

@@ -65,7 +65,8 @@ AGORA_APP_CERTIFICATE=""
 
 ### Setting up Agora (calls)
 
-This guide will walk you through setting up Agora for your application, retrieving the necessary keys, and ensuring proper configuration to enable live calls.
+This guide will walk you through setting up Agora for your application, retrieving the necessary keys, and ensuring
+proper configuration to enable live calls.
 
 ---
 
@@ -73,19 +74,19 @@ This guide will walk you through setting up Agora for your application, retrievi
 
 1. **Log in to the Agora Console**
 
-   - Navigate to the [Agora Console](https://console.agora.io/).
-   - Log in or create a new account if you don’t have one.
+    - Navigate to the [Agora Console](https://console.agora.io/).
+    - Log in or create a new account if you don’t have one.
 
 2. **Create a New Project**
 
-   - Go to the **Projects** section.
-   - Click **Create** to add a new project.
-   - Provide a name for your project and ensure you select the **Live** mode to enable live broadcasting features.
+    - Go to the **Projects** section.
+    - Click **Create** to add a new project.
+    - Provide a name for your project and ensure you select the **Live** mode to enable live broadcasting features.
 
 3. **Enable Primary Certificate**
-   - After creating your project, go to the **Project Management** page.
-   - Locate your project and click on **Edit**.
-   - Ensure that the **Primary Certificate** is enabled. This is essential for secure communication and authentication.
+    - After creating your project, go to the **Project Management** page.
+    - Locate your project and click on **Edit**.
+    - Ensure that the **Primary Certificate** is enabled. This is essential for secure communication and authentication.
 
 ---
 
@@ -93,18 +94,19 @@ This guide will walk you through setting up Agora for your application, retrievi
 
 1. **Locate Your Project Keys**
 
-   - In the Agora Console, navigate to the **Project Details** section of your newly created project.
+    - In the Agora Console, navigate to the **Project Details** section of your newly created project.
 
 2. **Get the `AGORA_APP_ID`**
 
-   - Copy the `App ID` value. This is your unique project identifier.
+    - Copy the `App ID` value. This is your unique project identifier.
 
 3. **Get the `AGORA_APP_CERTIFICATE`**
-   - Scroll down to find the **Primary Certificate** section.
-   - Copy the value under **Primary Certificate**. This will be used for token generation and secure authentication.
+    - Scroll down to find the **Primary Certificate** section.
+    - Copy the value under **Primary Certificate**. This will be used for token generation and secure authentication.
 
 **Important Note:**
-Ensure you handle the `Primary Certificate` securely and never expose it publicly to prevent unauthorized access to your application.
+Ensure you handle the `Primary Certificate` securely and never expose it publicly to prevent unauthorized access to your
+application.
 
 ---
 
@@ -119,7 +121,8 @@ Ensure you handle the `Primary Certificate` securely and never expose it publicl
    AGORA_APP_CERTIFICATE=your_agora_certificate_here
    ```
 
-3. Ensure the values match exactly with those from the Agora Console. Any mismatch will prevent calls from working correctly.
+3. Ensure the values match exactly with those from the Agora Console. Any mismatch will prevent calls from working
+   correctly.
 
 ---
 
@@ -173,7 +176,7 @@ Ensure you handle the `Primary Certificate` securely and never expose it publicl
 
 ### Deploy admin
 
-1. run the flutter code to build the web version inside the `super_up_admin` folder
+1. run the flutter code to build the web version inside the `super_dashboard` folder
 2. run this code `flutter build web --web-renderer html`
 3. now you can find the html folder inside the build folder you need to upload it to your server
 4. Host the output on your VPS via Nginx. See [Deployment](./deployment.md).
@@ -181,8 +184,10 @@ Ensure you handle the `Primary Certificate` securely and never expose it publicl
 ### Running the code (with Docker)
 
 1. Install [Docker](https://www.docker.com) and Docker Compose.
-2. Update `.env.production` `DB_URL` to `mongodb://myuser_xxx:mypassword_xxx@mongo:27017/super_up?authSource=admin` for compose.
-3. Build the backend Dockerfile. Note: it only builds the backend service; MongoDB runs as a separate container, managed by compose.
+2. Update `.env.production` `DB_URL` to `mongodb://myuser_xxx:mypassword_xxx@mongo:27017/super_up?authSource=admin` for
+   compose.
+3. Build the backend Dockerfile. Note: it only builds the backend service; MongoDB runs as a separate container, managed
+   by compose.
    doesn't include MongoDB or Redis. You need to manage these separately OR.
 4. Use a `compose file` witch manage all dependency together.
 5. Run `docker-compose up` to start the containers and view logs, or run `docker-compose up -d` to run in the
@@ -190,24 +195,27 @@ Ensure you handle the `Primary Certificate` securely and never expose it publicl
 
 ### Running the code (with PM2)
 
-- [pm2](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page) is a popular framework for run the nodejs applications in background with high performance
+- [pm2](https://pm2.keymetrics.io/docs/usage/pm2-doc-single-page) is a popular framework for run the nodejs applications
+  in background with high performance
 - You need first to install it by `npm install pm2@latest -g`
 - You run the app is already ready to run with pm2 by run `npm run pm2`
 - To see the logs in real time you can run `pm2 logs`
 
 ### AuthKey.p8
 
-- This key is required to make calls for ios VOIP ring you need to get it from [apple](./flutter.md#notifications-ios-apns-and-voip)
+- This key is required to make calls for ios VOIP ring you need to get it
+  from [apple](./flutter.md#notifications-ios-apns-and-voip)
 
 ### Common errors
 
 1. If you encounter the error `ERROR [ExceptionHandler] Configuration key "JWT_SECRET" does not exist`, it means NestJS
    cannot read your `.env.production` file.
 
-   - To fix this, ensure you have injected the environment variable or that `.env.production` exists in the root of the
-     project. It may be ignored by .git.
+    - To fix this, ensure you have injected the environment variable or that `.env.production` exists in the root of the
+      project. It may be ignored by .git.
 
-2. Error `The default Firebase app does not exist...`: you enabled FCM but did not configure admin or Flutter side properly. Follow the linked video.
+2. Error `The default Firebase app does not exist...`: you enabled FCM but did not configure admin or Flutter side
+   properly. Follow the linked video.
 
 :::tip Contact me
 I offer paid full server-side setup. See [Plans](support.md)

@@ -10,7 +10,7 @@ This is a complete, production-focused deployment guide for your own VPS. Includ
 
 - api subdomain (backend REST + WebSockets): `api.example.com`
 - web app (Flutter web build): `web.example.com`
-- admin panel (Flutter web build): `admin.example.com`
+- admin dashboard (React SPA): `dashboard.example.com` or `admin.example.com`
 
 Point DNS A records of these subdomains to your VPS public IP.
 
@@ -150,7 +150,7 @@ server {
 }
 ```
 
-Admin panel `admin.example.com` serving `/var/www/super-up/admin` similarly.
+For the admin dashboard (React), see the [Deploy React Admin Dashboard](#deploy-react-admin-dashboard) section.
 
 Enable sites and reload Nginx:
 
@@ -169,7 +169,7 @@ sudo nginx -t && sudo systemctl reload nginx
 sudo snap install core && sudo snap refresh core
 sudo snap install --classic certbot
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
-sudo certbot --nginx -d api.example.com -d web.example.com -d admin.example.com --redirect -m you@example.com --agree-tos -n
+sudo certbot --nginx -d api.example.com -d web.example.com -d dashboard.example.com --redirect -m you@example.com --agree-tos -n
 ```
 
 ### 7) Firewall
@@ -180,19 +180,17 @@ sudo ufw allow 'Nginx Full'
 sudo ufw --force enable
 ```
 
-### 8) Deploy Flutter web + Admin builds
+### 8) Deploy Flutter Web App
 
-- Build web inside your Flutter apps:
+Build and deploy the Flutter web app:
 
 ```bash
 cd super_up_app
 flutter build web --release --web-renderer html
 sudo rsync -a build/web/ /var/www/super-up/web/
-
-cd ../super_up_admin
-flutter build web --release --web-renderer html
-sudo rsync -a build/web/ /var/www/super-up/admin/
 ```
+
+For the admin dashboard (React), see the [Deploy React Admin Dashboard](#deploy-react-admin-dashboard) section below.
 
 ## Docker Compose deployment
 
@@ -274,6 +272,221 @@ docker compose logs -f api | cat
 ```
 
 Configure Nginx `api.example.com` to reverse proxy to `http://127.0.0.1:8080` with the same WebSocket headers shown earlier. SSL with Certbot is identical to non-Docker.
+
+## Deploy React Admin Dashboard
+
+The admin dashboard is a React + Vite SPA that connects to the backend API. Deploy it to `dashboard.example.com` (or `admin.example.com`).
+
+### 1) Build the Dashboard
+
+```bash
+cd super_dashboard
+
+# Install dependencies
+pnpm install   # or npm install
+
+# Create production .env
+cat > .env.production <<'EOF'
+VITE_API_URL=https://api.example.com/api/v1
+VITE_MEDIA_URL=https://api.example.com
+VITE_WS_URL=https://api.example.com
+EOF
+
+# Build for production
+pnpm build   # outputs to dist/
+```
+
+### 2) Deploy to VPS
+
+```bash
+# Copy dist folder to server
+rsync -avz dist/ user@your-vps:/var/www/super-up/dashboard/
+
+# Or if building on server
+cd /var/www/super-up/dashboard
+git pull origin main
+pnpm install
+pnpm build
+cp -r dist/* /var/www/super-up/dashboard-static/
+```
+
+### 3) Nginx Configuration
+
+Create `/etc/nginx/sites-available/dashboard.example.com`:
+
+```nginx
+server {
+    listen 80;
+    server_name dashboard.example.com;
+    root /var/www/super-up/dashboard;
+    index index.html;
+
+    # Gzip compression
+    gzip on;
+    gzip_vary on;
+    gzip_min_length 1024;
+    gzip_proxied expired no-cache no-store private auth;
+    gzip_types text/plain text/css text/xml text/javascript application/x-javascript application/xml application/javascript application/json;
+
+    # Handle SPA routing - all routes serve index.html
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+
+    # Cache static assets (JS, CSS, images) - 1 year
+    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|woff|woff2|ttf|eot)$ {
+        expires 1y;
+        add_header Cache-Control "public, immutable";
+    }
+
+    # Cache locale JSON files - 1 hour
+    location /locales/ {
+        expires 1h;
+        add_header Cache-Control "public";
+    }
+
+    # Security headers
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+}
+```
+
+Enable the site:
+
+```bash
+sudo ln -s /etc/nginx/sites-available/dashboard.example.com /etc/nginx/sites-enabled/
+sudo nginx -t && sudo systemctl reload nginx
+```
+
+### 4) SSL Certificate
+
+Add the dashboard domain to your Certbot command:
+
+```bash
+sudo certbot --nginx -d dashboard.example.com --redirect -m you@example.com --agree-tos -n
+```
+
+Or if you already have other domains:
+
+```bash
+sudo certbot --nginx --expand -d api.example.com -d web.example.com -d dashboard.example.com
+```
+
+### 5) Docker Deployment (Alternative)
+
+The dashboard includes a Dockerfile for containerized deployment:
+
+```bash
+cd super_dashboard
+
+# Build Docker image
+docker build -t super-dashboard:latest .
+
+# Run container
+docker run -d \
+  --name super-dashboard \
+  -p 8081:80 \
+  --restart unless-stopped \
+  super-dashboard:latest
+```
+
+Add to your `docker-compose.yml`:
+
+```yaml
+services:
+  # ... existing api and mongo services ...
+
+  dashboard:
+    build:
+      context: ./dashboard
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:80"
+```
+
+Then configure Nginx to reverse proxy to `http://127.0.0.1:8081`:
+
+```nginx
+server {
+    listen 80;
+    server_name dashboard.example.com;
+
+    location / {
+        proxy_pass http://127.0.0.1:8081;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+```
+
+### Dashboard Environment Variables
+
+| Variable | Description | Example |
+|----------|-------------|---------|
+| `VITE_API_URL` | Backend API endpoint | `https://api.example.com/api/v1` |
+| `VITE_MEDIA_URL` | Media files base URL | `https://api.example.com` |
+| `VITE_WS_URL` | WebSocket URL for realtime logs | `https://api.example.com` |
+
+### Dashboard Login Credentials
+
+The dashboard uses admin credentials configured in the backend `.env`:
+
+- **Admin**: `ControlPanelAdminPassword` - full access
+- **Viewer**: `ControlPanelAdminPasswordViewer` - read-only access
+
+Default login endpoint: `POST /admin/auth/login`
+
+## SuperUp App Versions
+
+SuperUp is available in two authentication variants:
+
+| Version | Auth Method | Description |
+|---------|-------------|-------------|
+| **Email Version** | Email + Password | Traditional email-based registration and login |
+| **Phone OTP Version** | Phone + Firebase OTP | Phone number authentication via Firebase SMS verification |
+
+### Email Version
+- Users register with email and password
+- Email verification supported
+- Password reset via email
+- No Firebase dependency for auth
+
+### Phone OTP Version (Firebase)
+- Users register with phone number
+- OTP sent via Firebase Authentication SMS
+- Requires Firebase project setup with Phone Auth enabled
+- Configure in `google-services.json` (Android) and `GoogleService-Info.plist` (iOS)
+
+### Backend Configuration
+
+The backend supports both versions. Configure in `.env`:
+
+```env
+# For Phone OTP version - enable Firebase
+isFirebaseFcmEnabled=true
+
+# For Email version
+isFirebaseFcmEnabled=false
+```
+
+### Choosing Your Version
+
+Select the appropriate Flutter app variant when building:
+
+```bash
+# Email version
+cd apps/super_up_app
+flutter build apk --release
+
+# Phone OTP version (Firebase)
+cd apps/super_up_app_firebase
+flutter build apk --release
+```
+
+Ensure your backend `.env` and Flutter `SConstants` match the chosen authentication method.
 
 ## Configure Flutter apps for your domain
 
