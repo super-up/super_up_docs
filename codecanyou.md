@@ -34,14 +34,31 @@
   submission. Existing apps can submit as an update.
   ![updates](https://github.com/user-attachments/assets/3be6793c-05f0-4c7a-9ed9-c403a88b7e1e)
 
+
+- Try the app now! Available on 5 platforms thanks to Flutter.
+- Admin login password is **super-up-strong-password-viewer**
+  [![test_1_android](https://github.com/hatemragab/v_chat_sdk/assets/37384769/2e950620-1c10-4253-8944-881bb448d559)](https://play.google.com/store/apps/details?id=com.superup.online)
+  [![test_2_ios](https://github.com/hatemragab/v_chat_sdk/assets/37384769/ccbbfeeb-eecd-45b4-bf68-9325af0c50d6)](https://apps.apple.com/us/app/super-up/id6445877902)
+  [![test_3_macOs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/77bfa5ae-d52b-4243-88f6-186f06460315)](https://apps.apple.com/us/app/super-up/id6445877902?mt=12)
+  [![test_4_web_chat](https://github.com/hatemragab/v_chat_sdk/assets/37384769/c7abc29c-3a34-4181-830c-61a72e6f17fe)](https://web.superupdev.online)
+  [![test_5_admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/97ac93e0-d210-49bd-8930-47b1daa43b2d)](https://admin.superupdev.online/)
+  [![test_6_windows](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3719f39a-662d-43f2-abda-003391bbc231)](https://apps.microsoft.com/detail/9PMDVDSG91F1?hl=en-eg)
+
 [![docs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d60ae209-ec42-4e47-ad12-44b901daf883)](https://super-up.github.io/super_up_docs/docs/intro)
 [![contact](https://github.com/hatemragab/v_chat_sdk/assets/37384769/0e94b63c-125f-44c4-8088-71ecfd182fbf)](https://super-up.github.io/super_up_docs/docs/support)
 ![fram_1](https://github.com/user-attachments/assets/4c085512-06ed-447e-9248-a9eeebe5401b)
 ![fram_2](https://github.com/hatemragab/v_chat_sdk/assets/37384769/40e65ed5-13dd-46a8-a09d-eedf63882d46)
 
 ![web](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3aa3cfd3-b877-4ca7-8e3c-6781e3ca5462)
-![admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/67d49a6a-ff03-4099-b7f0-05097bdc1069)
-![admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/243a9312-1370-4428-a8b8-e6412417980a)
+
+- **New in updates 1 Jun 2026**
+
+![admin](https://github.com/user-attachments/assets/75d2e397-c776-4de4-8600-d877dcdbe6c2)
+![admin](https://github.com/user-attachments/assets/a6092760-c399-4dd0-b221-4c1d87cfbe9b)
+![admin](https://github.com/user-attachments/assets/13506ee7-7e1a-42e3-ae9b-3d80b7e4798f)
+![admin](https://github.com/user-attachments/assets/c49d0b25-e18f-42b6-8c4f-58f39957ffd5)
+![chats](https://github.com/user-attachments/assets/cf7cb269-37b4-4f74-a5fc-3bae5722fddf)
+![chats](https://github.com/user-attachments/assets/7379f1eb-5353-4cd3-8f5b-501a08abc3b2)
 
 - **New in updates 14 Feb 2024**
 
@@ -54,21 +71,12 @@
   ![Image](https://github.com/user-attachments/assets/d9c7187a-01e1-4e5a-b5da-da1ad406f7b4)
   ![Image](https://github.com/user-attachments/assets/0af89e73-259f-4ffa-8d2d-17c2945b3bcc)
 
-- Try the app now! Available on 5 platforms thanks to Flutter.
-- Admin login password is **super-up-strong-password-viewer**
-  [![test_1_android](https://github.com/hatemragab/v_chat_sdk/assets/37384769/2e950620-1c10-4253-8944-881bb448d559)](https://play.google.com/store/apps/details?id=com.superup.online)
-  [![test_2_ios](https://github.com/hatemragab/v_chat_sdk/assets/37384769/ccbbfeeb-eecd-45b4-bf68-9325af0c50d6)](https://apps.apple.com/us/app/super-up/id6445877902)
-  [![test_3_macOs](https://github.com/hatemragab/v_chat_sdk/assets/37384769/77bfa5ae-d52b-4243-88f6-186f06460315)](https://apps.apple.com/us/app/super-up/id6445877902?mt=12)
-  [![test_4_web_chat](https://github.com/hatemragab/v_chat_sdk/assets/37384769/c7abc29c-3a34-4181-830c-61a72e6f17fe)](https://web.superupdev.online)
-  [![test_5_admin](https://github.com/hatemragab/v_chat_sdk/assets/37384769/97ac93e0-d210-49bd-8930-47b1daa43b2d)](https://admin.superupdev.online/)
-  [![test_6_windows](https://github.com/hatemragab/v_chat_sdk/assets/37384769/3719f39a-662d-43f2-abda-003391bbc231)](https://apps.microsoft.com/detail/9PMDVDSG91F1?hl=en-eg)
-
 ## Technologies
 
-1. [Flutter](https://flutter.dev) for client side (3.24.x+)
-2. Node.js `v17.9.1` or later for backend [NestJS](https://nestjs.com)
+1. [Flutter](https://flutter.dev) for client side (3.28.x+)
+2. Node.js `v20.0.0` or later for backend [NestJS](https://nestjs.com)
 3. [socket-io](https://socket.io) for real time management
-4. [mongodb](https://www.mongodb.com) for data storage v `v 5.*` or `v 6.*` only
+4. [mongodb](https://www.mongodb.com) for data storage v `v 7.*` or `v 8.*` and above
 5. Backend tech: Bearer token `JWT`, ORM `mongoose`
 6. [agora-io](https://www.agora.io) for video and voice calls
 7. All media saved on the server on your vps server
@@ -140,20 +148,156 @@
 
 ## Features (Admin)
 
-- See all users with time of join and search of them
-- See the number of users (deleted, online, etc...)
-- See more about all devices that use the app
-- Messages and Chat Rooms counter and more
-- See all counties that uses your app and its number!
-- Ban and delete users from admin panel
-- See all information about specific user
-- Send notification to all users who use the app!
-- Control Your chat app like allow calls or show ads and more!
-- Set max limits for group and broadcast sizes
-- there are more to discover in the admin app give it try!
-- admin app is responsive you can use it even on mobile and generate apk or web for it!
-- 16 language support for admin also
-- More updates will be available soon
+### 📊 Dashboard & Analytics
+
+- Overview statistics (users, messages, calls, rooms, stories)
+- User growth chart with trend tracking
+- Message analytics and type distribution
+- Platform distribution (iOS, Android, Web, Desktop)
+- Geographic analytics with world map
+- Communication stats (calls, rooms)
+- Activity timeline visualization
+- Admin activities audit trail
+- Custom date range filters (7d, 30d, 90d, custom)
+
+### 👥 User Management
+
+- Complete user list with search and filters
+- Filter by: registration status, ban status, verification, account status, date
+- Detailed user profile view (avatar, contact info, devices, rooms, calls)
+- Edit user profile inline
+- Add/remove verification badge
+- Ban/unban users
+- Bulk actions: ban, verify, delete, restore multiple users
+- Real-time online status indicator
+- Copy user ID to clipboard
+
+### 💬 Message Management
+
+- Browse all messages with content preview
+- Search messages by content
+- Filter by: sender, room, message type, status, date
+- Support all message types: text, voice, image, video, file, location, sticker, GIF, call, reaction
+- Voice message player (play, pause, seek, download)
+- Video message preview with inline player
+- Delete/restore messages
+- Bulk message actions
+- forwarding indicators
+
+### 🏠 Rooms & Groups Management
+
+- Tabbed view: Groups, Broadcasts, Direct Messages
+- Group info: title, description, avatar, members, creator, public/private
+- Broadcast info: title, avatar, subscribers, creator
+- Direct message info: participants, message count
+- Room details page
+- Delete/restore rooms
+- Member management
+- Bulk room actions
+
+### 📢 Stories Management
+
+- Browse all user stories
+- Story types: image, video, voice
+- Expiry status with progress bar
+- Story details: creator, views, dates
+- Preview thumbnails
+- Delete/restore stories
+
+### 📞 Call Management
+
+- Complete call history
+- Call statistics (total, duration, averages)
+- Call types: voice and video
+- Call status: ended, missed, rejected, cancelled, ongoing, ringing
+- Call details: participants, duration, platform, timestamps
+
+### 🚨 Reports & Moderation
+
+- View all user/content reports
+- Filter by: type (user, chat, message), status (pending, approved, rejected)
+- Report details: reason, reported content, reporter info
+- Approve/reject reports
+- Bulk report actions
+
+### 🔔 Notifications
+
+- View all sent notifications
+- Send push notification to all users
+- Notification composer with title, content, image
+- Notification history tracking
+
+### 📱 Devices Management
+
+- All user devices list
+- Filter by platform (Android, iOS, Web, Desktop)
+- Device info: user, platform, app version, last seen, visits, push key
+- Delete device records
+
+### 📝 Audit Logs
+
+- Complete admin action history
+- Track: CREATE, UPDATE, DELETE, LOGIN, LOGOUT
+- Details: action type, target, admin email, IP address, timestamp
+- Color-coded action tags
+
+### 📡 Real-time Logs
+
+- Live event stream via WebSocket
+- Filter by event category
+- Severity levels: Error, Warning, Info, Debug
+- Connection status indicator
+- Pause/resume/clear controls
+
+### ⚙️ Configuration & Settings
+
+- **App Settings**: app name, feedback email, ads toggle
+- **Platform Restrictions**: enable/disable Web, Mobile, Desktop login
+- **User Features**: toggle groups, broadcasts, messaging
+- **Limits**: file upload size, call timeout, group/broadcast max members
+- **Registration**: require approval for new users
+
+### 🌍 Countries Management
+
+- Country list with codes and flags
+- Search, add, edit, delete countries
+
+### 🎨 Sticker Packs
+
+- List all sticker packs
+- Create/edit/delete packs
+- Upload sticker images
+- Filter by animated status
+- Individual sticker management
+
+### 📲 App Versions
+
+- Platform-specific versions (iOS, Android, Windows, macOS)
+- Version & build number management
+- Force update settings
+- Release notes editor
+- Status: draft, published, deprecated
+
+### 📤 Data Export
+
+- Export: Users, Messages, Rooms, Calls, Stories, Reports, Notifications, Devices
+- Formats: JSON, CSV, Excel
+- Custom filters and date range
+- Direct download
+
+### 🎯 General Features
+
+- Admin authentication
+- Multi-language support (16 languages including RTL)
+- Dark/Light mode toggle
+- Responsive design (desktop, tablet, mobile)
+- Table: pagination, sorting, column resize, row selection
+- Bulk operations across all sections
+- Universal search and filtering
+- Date range presets
+- Status badges with color coding
+- Confirmation dialogs for destructive actions
+- Generate APK or Web build for admin panel
 
 ## Why purchase
 
@@ -185,6 +329,39 @@
 [![](https://github.com/hatemragab/v_chat_sdk/assets/37384769/d34777a0-23f7-443c-9f47-285b4280361b)](https://github.com/hatemragab)
 
 [![fram_3](https://github.com/user-attachments/assets/f620288b-2023-4d70-9ddb-8f6044f3743a)](https://super-up.github.io/super_up_docs/docs/support/#lets-launch-your-chat-app-together)
+
+<pre><code>
+- Update 1 Jun 2026  V3.0.0 build 92
+- the most big update in functions and ui is here 3.0.0 now avalible
+- support new flutter version at stable, 3.38.5
+- upgrade all flutter packages
+- completely new admin panel its name super_dashboard now  redesign with powerful options and backend updates support a lot of operations like  ()
+- admin Completely rebuilt with React + Refine + Ant Design it supports 
+- User management: view, edit, ban, delete users
+- Chat management: monitor, delete chats and messages
+- Broadcast management: create, edit, delete broadcasts
+- Group management: full control over groups
+- Story moderation: review and remove stories
+- Reports handling: manage user reports
+- Push notifications: send to all
+- Analytics dashboard: users, messages, storage stats
+- Settings control: app configuration from dashboard
+- very big update to stories -> now it support send voices,videos , more actions now you can reply to stories a lot of improvements to the ui of create story etc... see more about the package of it created by me https://github.com/v-chat-sdk/v_story_viewer
+- *introduce* send stickers,GIF,contacts on the chats 
+- *introduce* page in settings to allow users to set font sizes and colors for chat message bubbles
+- completely new ui for messages page to be more like telegram bubble style  see my package https://github.com/v-chat-sdk/v_chat_bubbles 
+- support full text parser option for bold italic code bocks a lot of improvements to text render inside the chats 
+- add messages emojis and now you can see who react to the message  
+- muli select mode for forward or delete messages 
+- *📞 OTP VERSION* -> update the otp phone version to have all of this updates 
+- new ui for voice recorder and text input to be glassy support 
+- new ui for login and register and reset and storage,main chats navigation ,stories tab view ,create story page ,dialog of pick data a lot of ui improvements done  see it inside the app 
+- Fix a lot of bugs 
+- ⭐ Don't forget to star the GitHub packages! you can also see my open source packages at
+- https://pub.dev/publishers/vchatsdk.com/packages
+- https://github.com/v-chat-sdk/v_story_viewer
+- https://github.com/v-chat-sdk/v_chat_bubbles 
+</code></pre>
 
 <pre><code>
 - Update 15 Oct 2025  V2.2.1 build 71
